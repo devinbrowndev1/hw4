@@ -17,14 +17,24 @@ class NLUDefault:
     	#tokenized input string
     	tokenInput = inputStr.split()
 
+    	#annotated string
+    	annotatedStr = inputStr
+
         flavors = self.oflavors
         sizes = self.osizes
         crusts = self.ocrusts
 
         # Pizza info
         for flavor in flavors:
-            if flavor in inputStr.lower():
+            if inputStr.lower().find(flavor) != -1:
+            	index_of_match = inputStr.lower().find(flavor)
+            	end_of_match = inputStr.lower().find(flavor) + len(flavor)
                 self.Intent = "INFORM"
+
+                annotate_start = '<pizza_type>'
+                annotate_end = '</pizza_type>'
+                inputStr = inputStr[:index_of_match]  + annotate_start + inputStr[index_of_match:end_of_match] + annotate_end + inputStr[end_of_match:] 
+
                 self.Slots["pizza_type"] = flavor
         for size in sizes:
             if size in inputStr.lower():
@@ -38,7 +48,8 @@ class NLUDefault:
 
         #NAMES
         if "it's" in inputStr:
-        	
+
+
 
 
         #ADDRESSES
