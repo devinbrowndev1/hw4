@@ -42,9 +42,10 @@ class NLUDefault:
 
 		size_regex = re.compile("[0-9]{2}.*(inch|in)")
 
-		size = size_regex.search(inputStr).group(0)
+		size = size_regex.search(inputStr)
 
 		if size is not None:
+			size = size.group(0)
 			inputStr, num_replace = re.subn(size, "<pizza_size>" + size + "</pizza_size>", inputStr)
 			self.Intent = "INFORM"
 
@@ -64,35 +65,40 @@ class NLUDefault:
 		#ADDRESSES
 		address_regex = re.compile("[0-9]+ .* ([A|a]ve|[W|w]ay|[S|s]treet|[B|b]lvd)")
 
-		address = address_regex.search(inputStr).group(0)
+		address = address_regex.search(inputStr)
 
-		inputStr, num_replace = re.subn(address, "<address>"+address+"</address>", inputStr)
+		if address is not None:
+			address = address.group(0)
+			inputStr, num_replace = re.subn(address, "<address>"+address+"</address>", inputStr)
 
-		if num_replace > 0:
-			self.Intent = "INFORM"
+			if num_replace > 0:
+				self.Intent = "INFORM"
 
 
 		#DELIVERY METHOD
 		delivery_regex = re.compile("(delivery|delivered|deliver)")
 
-		deliver = delivery_regex.search(inputStr).group(0)
+		deliver = delivery_regex.search(inputStr)
 
 		if deliver is not None:
+			deliver = deliver.group(0)
 			inputStr = re.sub(deliver, "<delivery_method>" + deliver + "</delivery_method>", inputStr)
 			self.Intent = "INFORM"
 
 		pickup_regex = re.compile("(pickup|pick-up|pick up|takeout|take-out|take out)")
 		from_store_regex = re.compile("(?<=from your ).*(store|location)")
 
-		pickup = pickup_regex.search(inputStr).group(0)
+		pickup = pickup_regex.search(inputStr)
 
 		if pickup is not None:
+			pickup = pickup.group(0)
 			inputStr = re.sub(pickup, "<delivery_method>" + pickup + "</delivery_method>", inputStr)
 			self.Intent = "INFORM"
 
-			from_store = pickup_regex.search(inputStr).group(0)
+			from_store = pickup_regex.search(inputStr)
 
 			if from_store is not None:
+				from_store = from_store.group(0)
 				inputStr = re.sub(from_store, "<pickup_location>" + from_store + "</pickup_location>", inputStr)
 				self.Intent = "INFORM"
 
@@ -100,9 +106,10 @@ class NLUDefault:
 		#PHONE NUMBERS
 		phone_number = re.compile("[0-9]{3}-[0-9]{3}-[0-9]{4}")
 
-		number = phone_number.search(inputStr).group(0)
+		number = phone_number.search(inputStr)
 
 		if number is not None:
+			number = number.group(0)
 			inputStr, num_replace = re.subn(number, "<phone>"+number+"</phone>", inputStr)
 			self.Intent = "INFORM"
 
@@ -128,9 +135,6 @@ class NLUDefault:
 		repeat_check = re.compile("(repeat|say that again|come again|what was that)")
 		check_check = re.compile("(ready|when|where's the pizza i ordered)")
 
-
-
-
 		if startover_check.search(inputStr) != None:
 			self.Intent = "START-OVER"
 		elif cancel_check.search(inputStr) != None:
@@ -143,7 +147,7 @@ class NLUDefault:
 		if self.Intent is None:
 			hello_regex = re.compile("(hello|hey|how's it going|greetings|hi|yo)")
 
-			hello = hello_regex.search(inputStr).group(0)
+			hello = hello_regex.search(inputStr)
 
 			if hello is not None:
 				self.Intent = "HELLO"
