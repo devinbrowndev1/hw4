@@ -8,62 +8,125 @@ class NLUDefault:
         self.oflavors = ["vegan", "hawaiian", "meat lovers", "4 cheese", "pepperoni", "veggie supreme"]
         self.osizes = ["small", "medium", "large"]
         self.ocrusts = ["thin", "regular", "gluten-free", "deep-dish"]
+        self.otoppings = ['onions','olives','swiss cheese','pineapple','provolone cheese','anchovies','extra cheese','peppers','pepporoni','sausage','ham','mushrooms']
         self.Domain = "pizza"
         self.Intent = None
         self.Slots = {}
        
     def parse(self, inputStr):
 
-    	#tokenized input string
+        #tokenized input string
     	tokenInput = inputStr.split()
 
         flavors = self.oflavors
         sizes = self.osizes
         crusts = self.ocrusts
+        toppings = self.otoppings
 
         # Pizza info
         for flavor in flavors:
-            if flavor in inputStr.lower():
+            inputStr, num_replace = re.sub(flavor, "<pizza_type>"+flavor+"</pizza_type>", inputStr)
+
+            if num_replace > 0:
                 self.Intent = "INFORM"
-                self.Slots["pizza_type"] = flavor
+
         for size in sizes:
-            if size in inputStr.lower():
+            inputStr, num_replace = re.sub(size, "<pizza_size>" + size + "</pizza_size>", inputStr)
+
+            if num_replace > 0:
                 self.Intent = "INFORM"
-                self.Slots["pizza_size"] = size
+
+        size_regex = re.compile("[0-9]{2}.*(inch|in)")
+
+        size = size_regex.search(inputStr).group(0)
+
+        if size is not None:
+            inputStr, num_replace = re.subn(size, "<pizza_size>" + size + "</pizza_size>", inputStr)
+            self.Intent = "INFORM"
+
         for crust in crusts:
-            check_format = re.sub("-", "", crust)
-            if crust in inputStr.lower() or check_format in inputStr.lower():
+            inputStr, num_replace = re.sub(crust, "<pizza_crust>" + crust + "</pizza_crust>", inputStr)
+
+            if num_replace > 0:
                 self.Intent = "INFORM"
-                self.Slots["pizza_crust"] = crust
 
-        #NAMES
-        if "it's" in inputStr:
-        	
+        for topping in toppings:
+            inputStr, num_replace = re.sub(topping, "<pizza_topping>"+topping+"</pizza_topping>", inputStr)
 
+            if num_replace > 0:
+                self.Intent = "INFORM"
 
         #ADDRESSES
+        address_regex = re.compile("[0-9]+ .* ([A|a]ve|[W|w]ay|[S|s]treet|[B|b]lvd)")
+
+        address = address_regex.search(inputStr).group(0)
+
+        inputStr, num_replace = re.subn(address, "<address>"+address+"</address>", inputStr)
+
+        if num_replace > 0:
+            self.Intent = "INFORM"
+
 
         #DELIVERY METHOD
-        if "delivery" in inputStr.lower():
+        delivery_regex = re.compile("(delivery|delivered|deliver)")
+
+        deliver = delivery_regex.search(inputStr).group(0)
+
+        if deliver is not None:
+            inputStr = re.sub(deliver, "<delivery_method>" + deliver + "</delivery_method>", inputStr)
             self.Intent = "INFORM"
-            self.Slots["order_delivery"] = "delivery"
-        elif "pickup" in inputStr.lower() or "pick-up" in inputStr.lower():
+
+        pickup_regex = re.compile("(pickup|pick-up|pick up|takeout|take-out|take out)")
+        from_store_regex = re.compile("(?<=from your ).*(store|location)")
+
+        pickup = pickup_regex.search(inputStr).group(0)
+
+        if pickup is not None:
+            inputStr = re.sub(pickup, "<delivery_method>" + pickup + "</delivery_method>", inputStr)
             self.Intent = "INFORM"
-            self.Slots["order_delivery"] = "pick-up"
-        elif "takeout" in inputStr.lower() or "take-out" in inputStr.lower():
-            self.Intent = "INFORM"
-            self.Slots["order_delivery"] = "pick-up"
+
+            from_store = pickup_regex.search(inputStr).group(0)
+
+            if from_store is not None:
+                inputStr = re.sub(from_store, "<pickup_location>" + from_store + "</pickup_location>", inputStr)
+                self.Intent = "INFORM"
+
 
         #PHONE NUMBERS
-     	if len(re.sub('[^0-9]','',inputStr)) == 10:
-     		self.Intent = "INFORM"
-            self.Slots["order_phone"] = re.sub('[^0-9]','',inputStr) 
+        phone_number = re.compile("[0-9]{3}-[0-9]{3}-[0-9]{4}")
 
+        number = phone_number.search(inputStr).group(0)
+
+        if number is not None:
+            inputStr, num_replace = re.subn(number, "<phone>"+number+"</phone>", inputStr)
+            self.Intent = "INFORM"
+
+        # NAMES
+        if "it's" in inputStr:
+            check = inputStr.split("it's ")
+            if not check[1].startswith("<"):
+                inputStr = re.sub(check[1], "<order_name>"+check[1]+"</order_name>", inputStr)
+                self.Intent = "INFORM"
+        if "this is" in inputStr:
+            check = inputStr.split("this is ")
+            tokenized_after = check[1].split()
+            inputStr = re.sub(tokenized_after[0], "<order_name>"+tokenized_after[0]+"</order_name>", inputStr)
+            self.Intent = "INFORM"
 
         # Dialog flow control/User-initiative requests
-        if "reorder" in inputStr.lower():
+        reorder_check = re.compile("(reorder|usual|preferred)")
+        if reorder_check.search(inputStr.lower()) is not None:
             self.Intent = "REORDER"
-        elif "start-over" in inputStr.lower() or "startover" in inputStr.lower():
+
+        startover_check = re.compile("(startover|start-over|start over)")
+        cancel_check = re.compile("(cancel|stop|give up)")
+        repeat_check = re.compile("(repeat|say that again|come again|what was that)")
+        check_check = re.compile("(ready|when|where's the pizza i ordered)")
+
+
+
+
+        if "start-over" in inputStr.lower() or "startover" in inputStr.lower():
             self.Intent = "START-OVER"
         elif "cancel" in inputStr.lower():
             self.Intent = "CANCEL"
@@ -72,13 +135,14 @@ class NLUDefault:
         elif "check" in inputStr.lower():
             self.Intent = "CHECK_ORDER"
 
-        # Confirm/deny
-        if "yes" == inputStr or "Yes" == inputStr:
-            self.Intent = "CONFIRM"
-        elif "no" == inputStr or "No" == inputStr:
-            self.Intent = "DENY"
+        if self.Intent is None:
+            hello_regex = re.compile("(hello|hey|how's it going|greetings|hi|yo)")
 
-    	return [self.Intent,self.annotatedStr]
+            hello = hello_regex.search(inputStr).group(0)
 
-in_string = input().lower()
+            if hello is not None:
+                self.Intent = "HELLO"
+
+        return self.Intent, inputStr
+
 
