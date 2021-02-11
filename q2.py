@@ -103,6 +103,23 @@ class NLUDefault:
 				self.Intent = "INFORM"
 
 
+		#NUM PIZZAS
+		num_pizzas = re.compile("(one|two|three|four|five|six|seven|eight|nine|ten)(?= *\w*\s+pizzas)")
+		pizza_q = num_pizzas.search(inputStr)
+		if pizza_q is not None:
+			pizza_q = pizza_q.group(0)
+			inputStr, num_replace = re.subn(pizza_q, "<pizza_quantity>"+pizza_q+"</pizza_quantity>", inputStr)
+			self.Intent = "INFORM"
+
+		#PIZZA HALVES
+		half_pizzas = re.compile("(first|second) half")
+		pizza_h = half_pizzas.search(inputStr)
+		if pizza_h is not None:
+			pizza_h = pizza_h.group(0)
+			inputStr, num_replace = re.subn(pizza_h, "<pizza_half>"+pizza_h+"</pizza_half>", inputStr)
+			self.Intent = "INFORM"
+
+
 		#PHONE NUMBERS
 		phone_number = re.compile("[0-9]{3}-[0-9]{3}-[0-9]{4}")
 
