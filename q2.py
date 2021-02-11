@@ -28,24 +28,12 @@ class NLUDefault:
 
         # Pizza info
         for flavor in flavors:
-<<<<<<< HEAD
+
             inputStr, num_replace = re.sub(flavor, "<pizza_type>"+flavor+"</pizza_type>", inputStr)
 
             if num_replace > 0:
                 self.Intent = "INFORM"
 
-=======
-            if inputStr.lower().find(flavor) != -1:
-            	index_of_match = inputStr.lower().find(flavor)
-            	end_of_match = inputStr.lower().find(flavor) + len(flavor)
-                self.Intent = "INFORM"
-
-                annotate_start = '<pizza_type>'
-                annotate_end = '</pizza_type>'
-                inputStr = inputStr[:index_of_match]  + annotate_start + inputStr[index_of_match:end_of_match] + annotate_end + inputStr[end_of_match:] 
-
-                self.Slots["pizza_type"] = flavor
->>>>>>> 9589370a56063ecedd02638150655459a82e5f8d
         for size in sizes:
             inputStr, num_replace = re.sub(size, "<pizza_size>" + size + "</pizza_size>", inputStr)
 
@@ -66,15 +54,9 @@ class NLUDefault:
             if num_replace > 0:
                 self.Intent = "INFORM"
 
-<<<<<<< HEAD
         for topping in toppings:
             inputStr, num_replace = re.sub(topping, "<pizza_topping>"+topping+"</pizza_topping>", inputStr)
-=======
-        #NAMES
-        if "it's" in inputStr:
 
-
->>>>>>> 9589370a56063ecedd02638150655459a82e5f8d
 
             if num_replace > 0:
                 self.Intent = "INFORM"
