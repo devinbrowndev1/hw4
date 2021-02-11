@@ -29,13 +29,13 @@ class NLUDefault:
 		# Pizza info
 		for flavor in flavors:
 
-			inputStr, num_replace = re.sub(flavor, "<pizza_type>"+flavor+"</pizza_type>", inputStr)
+			inputStr, num_replace = re.subn(flavor, "<pizza_type>"+flavor+"</pizza_type>", inputStr)
 
 			if num_replace > 0:
 				self.Intent = "INFORM"
 
 		for size in sizes:
-			inputStr, num_replace = re.sub(size, "<pizza_size>" + size + "</pizza_size>", inputStr)
+			inputStr, num_replace = re.subn(size, "<pizza_size>" + size + "</pizza_size>", inputStr)
 
 			if num_replace > 0:
 				self.Intent = "INFORM"
@@ -49,13 +49,13 @@ class NLUDefault:
 			self.Intent = "INFORM"
 
 		for crust in crusts:
-			inputStr, num_replace = re.sub(crust, "<pizza_crust>" + crust + "</pizza_crust>", inputStr)
+			inputStr, num_replace = re.subn(crust, "<pizza_crust>" + crust + "</pizza_crust>", inputStr)
 
 			if num_replace > 0:
 				self.Intent = "INFORM"
 
 		for topping in toppings:
-			inputStr, num_replace = re.sub(topping, "<pizza_topping>"+topping+"</pizza_topping>", inputStr)
+			inputStr, num_replace = re.subn(topping, "<pizza_topping>"+topping+"</pizza_topping>", inputStr)
 
 
 			if num_replace > 0:

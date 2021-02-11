@@ -1,6 +1,8 @@
 
 from q2 import NLUDefault
 
+print('Prompt:')
 invalue = input()
-NLUDefault.parse(invalue)
+NLU = NLUDefault()
+print(NLU.parse(invalue))
 
