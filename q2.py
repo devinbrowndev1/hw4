@@ -7,7 +7,7 @@ class NLUDefault:
 	def __init__(self):
 		self.oflavors = ["vegan", "hawaiian", "meat lovers", "4 cheese", "pepperoni", "veggie supreme"]
 		self.osizes = ["small", "medium", "large"]
-		self.ocrusts = ["thin", "regular", "gluten-free", "deep-dish"]
+		self.ocrusts = ["thin", "regular", "gluten-free","gluten free", "deep-dish", "deep dish"]
 		self.otoppings = ['onions','olives','swiss cheese','pineapple','provolone cheese','anchovies','extra cheese','peppers','pepporoni','sausage','ham','mushrooms']
 		self.Domain = "pizza"
 		self.Intent = None
@@ -95,7 +95,7 @@ class NLUDefault:
 			inputStr = re.sub(pickup, "<delivery_method>" + pickup + "</delivery_method>", inputStr)
 			self.Intent = "INFORM"
 
-			from_store = pickup_regex.search(inputStr)
+			from_store = from_store_regex.search(inputStr)
 
 			if from_store is not None:
 				from_store = from_store.group(0)
