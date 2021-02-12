@@ -8,7 +8,7 @@ class NLUDefault:
 		self.oflavors = ["vegan", "hawaiian", "meat lovers", "4 cheese", "pepperoni", "veggie supreme"]
 		self.osizes = ["small", "medium", "large"]
 		self.ocrusts = ["thin", "regular", "gluten-free","gluten free", "deep-dish", "deep dish"]
-		self.otoppings = ['onions','olives','swiss cheese','pineapple','provolone cheese','anchovies','extra cheese','peppers','pepporoni','sausage','ham','mushrooms']
+		self.otoppings = ['cheese','onions','olives','swiss cheese','pineapple','provolone cheese','anchovies','extra cheese','peppers','pepporoni','sausage','ham','mushrooms']
 		self.Domain = "pizza"
 		self.Intent = None
 		self.Slots = {}
@@ -151,6 +151,7 @@ class NLUDefault:
 		cancel_check = re.compile("(cancel|stop|give up)")
 		repeat_check = re.compile("(repeat|say that again|come again|what was that)")
 		check_check = re.compile("(ready|when|where's the pizza i ordered)")
+		
 
 		if startover_check.search(inputStr) != None:
 			self.Intent = "START-OVER"
@@ -159,15 +160,18 @@ class NLUDefault:
 		elif repeat_check.search(inputStr) != None:
 			self.Intent = "REPEAT"
 		elif check_check.search(inputStr) != None:
-			self.Intent = "CHECK_ORDER"
+			self.Intent = "CHECK_ORDER" 
 
 		if self.Intent is None:
 			hello_regex = re.compile("(hello|hey|how's it going|greetings|hi|yo)")
 
 			hello = hello_regex.search(inputStr)
+			ty_check = re.compile("(thanks|thank you|ty|thx|awesome|super)")
 
 			if hello is not None:
 				self.Intent = "HELLO"
+			elif ty_check is not None:
+				self.Intent = "THANKS"
 
 		return self.Intent, inputStr
 
