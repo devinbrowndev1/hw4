@@ -7,8 +7,8 @@ class NLUDefault:
 	def __init__(self):
 		self.oflavors = ["vegan", "hawaiian", "meat lovers", "4 cheese", "pepperoni", "veggie supreme"]
 		self.osizes = ["small", "medium", "large"]
-		self.ocrusts = ["thin", "regular", "gluten-free","gluten free", "deep-dish", "deep dish"]
-		self.otoppings = ['cheese','onions','olives','swiss cheese','pineapple','provolone cheese','anchovies','extra cheese','peppers','pepporoni','sausage','ham','mushrooms']
+		self.ocrusts = ["thin", "regular", "gluten-free", "deep-dish"]
+		self.otoppings = ['onions','olives','swiss cheese','pineapple','provolone cheese','anchovies','extra cheese','peppers','pepporoni','sausage','ham','mushrooms']
 		self.Domain = "pizza"
 		self.Intent = None
 		self.Slots = {}
@@ -95,29 +95,12 @@ class NLUDefault:
 			inputStr = re.sub(pickup, "<delivery_method>" + pickup + "</delivery_method>", inputStr)
 			self.Intent = "INFORM"
 
-			from_store = from_store_regex.search(inputStr)
+			from_store = pickup_regex.search(inputStr)
 
 			if from_store is not None:
 				from_store = from_store.group(0)
 				inputStr = re.sub(from_store, "<pickup_location>" + from_store + "</pickup_location>", inputStr)
 				self.Intent = "INFORM"
-
-
-		#NUM PIZZAS
-		num_pizzas = re.compile("(one|two|three|four|five|six|seven|eight|nine|ten)(?= *\w*\s+pizzas)")
-		pizza_q = num_pizzas.search(inputStr)
-		if pizza_q is not None:
-			pizza_q = pizza_q.group(0)
-			inputStr, num_replace = re.subn(pizza_q, "<pizza_quantity>"+pizza_q+"</pizza_quantity>", inputStr)
-			self.Intent = "INFORM"
-
-		#PIZZA HALVES
-		half_pizzas = re.compile("(first|second) half")
-		pizza_h = half_pizzas.search(inputStr)
-		if pizza_h is not None:
-			pizza_h = pizza_h.group(0)
-			inputStr, num_replace = re.subn(pizza_h, "<pizza_half>"+pizza_h+"</pizza_half>", inputStr)
-			self.Intent = "INFORM"
 
 
 		#PHONE NUMBERS
@@ -151,7 +134,6 @@ class NLUDefault:
 		cancel_check = re.compile("(cancel|stop|give up)")
 		repeat_check = re.compile("(repeat|say that again|come again|what was that)")
 		check_check = re.compile("(ready|when|where's the pizza i ordered)")
-		
 
 		if startover_check.search(inputStr) != None:
 			self.Intent = "START-OVER"
@@ -160,19 +142,26 @@ class NLUDefault:
 		elif repeat_check.search(inputStr) != None:
 			self.Intent = "REPEAT"
 		elif check_check.search(inputStr) != None:
-			self.Intent = "CHECK_ORDER" 
+			self.Intent = "CHECK_ORDER"
 
 		if self.Intent is None:
 			hello_regex = re.compile("(hello|hey|how's it going|greetings|hi|yo)")
 
 			hello = hello_regex.search(inputStr)
-			ty_check = re.compile("(thanks|thank you|ty|thx|awesome|super)")
 
 			if hello is not None:
 				self.Intent = "HELLO"
-			elif ty_check is not None:
-				self.Intent = "THANKS"
 
 		return self.Intent, inputStr
+
+
+invalue = 'nomorepizzaplease'
+
+while invalue != 'quit':
+	print('Type the sentence to be parsed by the rule-based system or type quit to exit')
+	invalue = input()
+	NLU = NLUDefault()
+	print(NLU.parse(invalue))
+
 
 
