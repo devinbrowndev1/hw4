@@ -1,0 +1,969 @@
+CONFIRM	yes,
+CONFIRM	yes,
+CONFIRM	amazing thanks
+REQUEST	when will my pizza order get here?
+INFORM	let's go with <order_name>khushboo</order_name>
+INFORM	may i get a <pizza_type>vegetarian</pizza_type>. make it <pizza_size>small</pizza_size>, please
+CONFIRM	great thank you
+INFORM	let's go with <delivery_method>to go</delivery_method>
+INFORM	<delivery_method>take out</delivery_method> will be great
+CHECKORDER	can you, please look up the status of my order?
+THANK	thanks
+HELLO	hi,
+HELLO	hi,
+INFORM	yep, let's go with <delivery_method>pick up</delivery_method>
+CHECKORDER	can you, please tell me where's the pizza i ordered?
+INFORM	it is <phone_number>519-555-1927</phone_number>
+DENY	no, i'd like to change something
+INFORM	<delivery_method>take out</delivery_method> will be great, please
+CONFIRM	yes, that would be great
+INFORM	please make it <delivery_method>delivery</delivery_method>, please
+INFORM	put it under <order_name>ali</order_name>
+INFORM	let's go with <order_name>paul</order_name>, please
+INFORM	oh, and can you make it <delivery_method>pick up</delivery_method>, please
+INFORM	can i order a <pizza_type>hawaiian</pizza_type> on <pizza_crust>regular</pizza_crust>. make it <pizza_size>10 inch</pizza_size>
+REORDER	i'd like to place an order for my previous pizza again, please
+THANK	super thanks
+DENY	no, i'd like to change something
+REORDER	could i place another order for my previous pizza order again, please
+INFORM	hi, i'd like to place an order for <delivery_method>delivery</delivery_method>
+INFORM	yeah, <delivery_method>take-out</delivery_method> would be great
+CONFIRM	yes, <delivery_method>pick up</delivery_method> sounds good
+DENY	no, i'd like to change something
+INFORM	i'd like a <pizza_type>supreme</pizza_type>. make it <pizza_size>large</pizza_size>, please
+INFORM	<delivery_method>pick up</delivery_method> sounds good
+INFORM	how about <delivery_method>pick up</delivery_method>
+INFORM	let's go with <order_name>lissa</order_name>
+THANK	great thanks
+REORDER	place another order for my preferred pizza order again
+INFORM	<delivery_method>pick up</delivery_method>
+INFORM	<delivery_method>take out</delivery_method> will be great
+CHECKORDER	how long until i get my pizza ?
+DENY	no
+INFORM	please make it <delivery_method>take out</delivery_method>, please
+INFORM	let's go with <order_name>ali</order_name>
+INFORM	it's <order_name>rahul</order_name>
+REORDER	i'd like to reorder my most common pizza order
+INFORM	yep, <delivery_method>pick up</delivery_method> would be great, please
+INFORM	yeah, <delivery_method>take-out</delivery_method> sounds good
+CORRECT	i want a different <info_type>pizza size</info_type>, please
+HELLO	hi,
+INFORM	can i get a uhh... <pizza_type>supreme</pizza_type>. make it <pizza_size>12 inch</pizza_size>
+CHECKORDER	can you tell me where's the pizza i ordered ?
+REORDER	place another order for my preferred pizza again
+INFORM	i'll order a <pizza_type>veggie</pizza_type>, please. make it <pizza_size>10 inch</pizza_size>
+REORDER	may i reorder my favorite pizza order
+INFORM	<delivery_method>delivery</delivery_method> will be great, please
+CHECKORDER	how much longer until my pizza order is ready?
+INFORM	let's go with <order_name>paul</order_name>
+INFORM	<delivery_method>take out</delivery_method> will be great
+INFORM	hello, may i place an order for <delivery_method>take-out</delivery_method>, please
+INFORM	hi, i'd like to order for <delivery_method>take out</delivery_method>
+REORDER	reorder my previous pizza
+INFORM	<phone_number>206-555-5677</phone_number>
+INFORM	it is <order_name>vipul</order_name>
+HELLO	hi,
+REORDER	could i order my most common pizza, please
+INFORM	<order_name>michael</order_name>
+INFORM	<delivery_method>pick up</delivery_method>, please
+INFORM	i'd like a <pizza_type>meat lovers</pizza_type>, please
+INFORM	let's go with <delivery_method>take out</delivery_method>, please
+INFORM	let's go with <delivery_method>take out</delivery_method>
+INFORM	let's go with <delivery_method>take out</delivery_method>
+HELLO	hello,
+INFORM	<delivery_method>delivery</delivery_method> will be great
+INFORM	yes, <delivery_method>delivery</delivery_method>, please
+REORDER	place another order for my most frequent pizza
+INFORM	hello, i'd like a <delivery_method>delivery</delivery_method> order
+INFORM	<order_name>ahmed</order_name>, please
+INFORM	yes, <delivery_method>pick up</delivery_method> sounds good
+CHECKORDER	how far away is my order ?
+INFORM	i'll have a uh... <pizza_type>all cheese</pizza_type> on <pizza_crust>regular crust</pizza_crust>. make it <pizza_size>large</pizza_size>, please
+INFORM	hello, i'd like a <pizza_size>large</pizza_size> <pizza_type>4 cheese</pizza_type>, please
+THANK	terrific thanks
+REORDER	please place an order for my order again
+INFORM	yes, please make it <delivery_method>pick up</delivery_method>
+HELLO	hi, i'd like to place an order
+INFORM	how about <delivery_method>take-out</delivery_method>, please
+INFORM	yes, <delivery_method>take out</delivery_method> from your maple leaf location would be great, please
+INFORM	i'll have a <pizza_type>vegetarian</pizza_type>, please
+REORDER	can i get my most recent, please
+DENY	nope
+CONFIRM	yep, that would be great
+INFORM	i'd like a <pizza_type>meat lovers</pizza_type>, please
+INFORM	please make it <delivery_method>take out</delivery_method> from your bellevue square store
+INFORM	it is <phone_number>425-555-0873</phone_number>
+INFORM	put it under <order_name>david</order_name>, please
+INFORM	yep, <delivery_method>pick up</delivery_method> would be great, please
+THANK	terrific thanks
+INFORM	use <order_name>logan</order_name>
+THANK	thanks
+INFORM	<delivery_method>delivery</delivery_method> would be great, please
+INFORM	<order_name>kyle</order_name>, please
+INFORM	may i get a <pizza_size>small</pizza_size> <pizza_type>hawaiian</pizza_type>, please
+DENY	no, i'd like to change something
+HELLO	hello,
+DENY	no, i'd like to change something
+INFORM	it is <phone_number>206-555-1234</phone_number>
+INFORM	hello, i'll have a <pizza_size>10 inch</pizza_size> <pizza_type>hawaiian</pizza_type>, please
+INFORM	i'd like to get a <pizza_type>all cheese</pizza_type> on <pizza_crust>regular</pizza_crust>, please
+INFORM	<delivery_method>pick up</delivery_method> would be great, please
+INFORM	yeah, <delivery_method>take-out</delivery_method>
+HELLO	hi,
+INFORM	please make it <delivery_method>delivery</delivery_method>, please
+INFORM	hello, may i get a <pizza_size>14 inch</pizza_size> <pizza_type>meat lovers</pizza_type>
+THANK	terrific thank you
+CONFIRM	that works yes,
+CORRECT	i want a different <info_type>pizza size</info_type>, please
+REORDER	can i get my most frequent order, please
+REORDER	i'd like to place another order for my most common pizza again, please
+REORDER	please place another order for my preferred pizza order again
+HELLO	hey, how's it going?
+REORDER	please take my most recent order again
+CHECKORDER	can you, please tell me where's the pizza i ordered?
+INFORM	i want a <pizza_size>12 inch</pizza_size> <pizza_type>pepperoni</pizza_type>
+INFORM	yep, please make it <delivery_method>pick up<delivery_method>, please
+DENY	nope
+DENY	nope
+THANK	super thanks
+REORDER	could i place another order for my most common pizza again
+REORDER	please place another order for my most frequent again
+DENY	no
+REORDER	place another order for my favorite pizza
+DENY	nope
+INFORM	may i get a meat lovers on gluten free crust, please. make it medium
+REORDER	please order my favorite again
+INFORM	let's go with <order_name>khushboo</order_name>, please
+DENY	nope
+CHECKORDER	how much longer until my pizza order is ready?
+INFORM	let's go with <order_name>khushboo</order_name>, please
+REORDER	may i reorder my favorite pizza again
+CONFIRM	yes, that would be great
+INFORM	can i order a <pizza_type>hawaiian</pizza_type> on <pizza_crust>regular</pizza_crust>. make it <pizza_size>large</pizza_size>
+THANK	thank you
+INFORM	it's <order_name>rahul</order_name>, please
+INFORM	yeah, <delivery_method>take-out</delivery_method> sounds good
+THANK	awesome thanks
+DENY	nope, i'd like to change <info_type>something
+INFORM	i need a uhh <pizza_type>hawaiian</pizza_type>. make it <pizza_size>12 inch</pizza_size>
+INFORM	let's go with <delivery_method>pick up</delivery_method> from your university location
+REORDER	please place an order for my preferred
+INFORM	it's <order_name>eric</order_name>
+REORDER	can i order my preferred pizza order, please
+INFORM	it is <phone_number>360-555-7197</phone_number>
+INFORM	i'd like a uhm... <pizza_type>4 cheese</pizza_type>. make it <pizza_size>10 inch</pizza_size>
+DENY	no, i'd like to change something
+INFORM	yes, how about <delivery_method>delivery</delivery_method>, please
+INFORM	<delivery_method>take out</delivery_method> sounds good
+INFORM	<delivery_method>delivery</delivery_method> will be great
+INFORM	yes, make it <delivery_method>pick up</delivery_method>
+HELLO	hello,
+REORDER	place an order for my favorite pizza again
+REORDER	could i get my pizza order again
+INFORM	put it under <order_name>asli</order_name>
+REORDER	please place an order for my pizza order
+CHECKORDER	how far away is my order ?
+REORDER	may i place an order for my favorite pizza order again
+INFORM	can i get a uhh <pizza_size>10 inch</pizza_size> <pizza_type>no dairy no meat special</pizza_type>, please
+INFORM	hello, i'd like a <pizza_size>small</pizza_size> <pizza_type>hawaiian</pizza_type>, please
+REORDER	please get my most common pizza again
+THANK	thanks
+DENY	nope
+INFORM	i need a <pizza_type>veggie supreme</pizza_type>. make it <pizza_size>12 inch</pizza_size>
+INFORM	use <order_name>vipul</order_name>
+REORDER	may i take my previous
+INFORM	yep, how about <delivery_method>pick up</delivery_method>, please
+HELLO	hey, how's it going?
+REORDER	please place another order for my usual
+INFORM	can i get a <pizza_size>large</pizza_size> <pizza_type>hawaiian</pizza_type> on <pizza_crust>thin crust</pizza_crust>, please
+REORDER	could i order my most frequent pizza again
+INFORM	hi, can i get a <pizza_type>pepperoni</pizza_type> ?
+CONFIRM	absolutely yes,
+DENY	nope, i'd like to change something
+INFORM	i need a uhm... <pizza_type>vegetarian</pizza_type>. make it <pizza_size>medium</pizza_size>, please
+INFORM	how about <delivery_method>delivery</delivery_method>
+INFORM	put it under <order_name>gabrielle</order_name>
+INFORM	yeah, oh, and can you make it <delivery_method>take-out</delivery_method>, please
+REORDER	place another order for my preferred pizza again
+INFORM	i'd rather get it as a <pizza_size>12 inch</pizza_size> <pizza_type>pepperoni</pizza_type>, please
+INFORM	<phone_number>425-555-0873</phone_number>
+INFORM	hey, how's it going? i'd like a <pizza_type>pepperoni</pizza_type>
+INFORM	oh, and can you, please make it <delivery_method>pick up</delivery_method>, please
+INFORM	let's go with <delivery_method>delivery</delivery_method>
+HELLO	hey, how's it going?
+INFORM	give me a uhh... <pizza_type>pepperoni</pizza_type> on <pizza_crust>regular crust</pizza_crust>, please
+REORDER	may i place another order for my favorite pizza again
+DENY	nope, i'd like to change something
+INFORM	it's <phone_number>425-555-8789</phone_number>
+REORDER	order my previous order
+INFORM	i'd like to get a uhm... <pizza_type>hawaiian</pizza_type> on <pizza_crust>regular</pizza_crust>. make it <pizza_size>medium</pizza_size>
+INFORM	can i <delivery_method>pick up</delivery_method> my order ?
+INFORM	<delivery_method>pick up</delivery_method> would be great, please
+INFORM	<delivery_method>take-out</delivery_method> would be great, please
+INFORM	yeah, please make it <delivery_method>take-out</delivery_method>
+REORDER	reorder my order
+REORDER	could i place another order for my most recent order
+CHECKORDER	when will my pizza order get here?
+INFORM	<delivery_method>pick up</delivery_method>
+REORDER	please reorder my favorite
+DENY	no, i'd like to change something
+INFORM	may i get a <pizza_type>4 cheese</pizza_type> on <pizza_crust>gluten free crust</pizza_crust>. make it <pizza_size>small</pizza_size>
+INFORM	use <order_name>logan</order_name>
+REORDER	reorder my
+INFORM	use <order_name>soumya</order_name>
+INFORM	<delivery_method>take-out</delivery_method> will be great
+INFORM	how about <delivery_method>pick up</delivery_method>, please
+HELLO	hey, how's it going?
+REORDER	may i reorder my usual order, please
+INFORM	i want a uh... <pizza_type>4 cheese</pizza_type>, please. make it <pizza_size>10 inch</pizza_size>
+CHECKORDER	when will my pizza order be delivered?
+INFORM	let's go with <delivery_method>take-out</delivery_method>, please
+CHECKORDER	where's the pizza i ordered?
+INFORM	hey, how's it going? may i get a large <pizza_type>4 cheese</pizza_type>, please
+INFORM	hello, may i get a <pizza_type>vegetarian</pizza_type>
+INFORM	<phone_number>206-555-5555</phone_number>
+REORDER	please get my most recent pizza again
+INFORM	hello, can i get a <pizza_type>hawaiian</pizza_type> ?
+INFORM	let's go with <order_name>gabrielle</order_name>
+THANK	amazing thanks
+HELLO	hello,
+REORDER	could i order my most frequent pizza order again
+INFORM	yeah, <delivery_method>delivery</deliver_method> sounds good
+INFORM	let's go with <delivery_method>delivery</delivery_method>
+THANK	terrific thank you
+REORDER	reorder my previous order
+DENY	no
+CONFIRM	yep, that works
+INFORM	<delivery_method>pick up</delivery_method> would be great
+INFORM	i'll get a <pizza_type>hawaiian</pizza_type> on <pizza_crust>deep dish</pizza_crust>. make it <pizza_size>medium</pizza_size>
+REORDER	please reorder my preferred pizza
+INFORM	i'll get a <pizza_type>all meat special</pizza_type> on <pizza_crust>gluten free</pizza_crust>. make it <pizza_size>14 inch</pizza_size>, please
+HELLO	Hello.
+INFORM	Um, hi. I just want to get a, a <pizza_size>large</pizza_size> pizza please.
+INFORM	Uh, no, I want a <pizza_type>Hawaiian</pizza_type> pizza, please.
+CORRECT	Well, I asked for Hawaiian. Hawaiian comes with <pizza_topping>pineapple and ham</pizza_topping>.
+CONFIRM	Mhm.
+DENY	No, I'll just, just the pizza, please.
+INFORM	I'll <delivery_method>pick it up</delivery_method>.
+INFORM	I'll <payment_type>pay when I pick up<payment_type>.
+CONFIRM	Okay.
+INFORM	<order_name>Jennifer</order_name>.
+GOODBYE	Okay, thanks. I'll, I'll see you then.
+HELLO	Hello?
+INFORM	Hi, I'm gonna want <pizza_quantity>three</pizza_quantity> <pizza_size>large</pizza_size> pizzas and they're all going to have different toppings.
+INFORM	Um, so the first one is going to be a pizza with just meat on it. So, <pizza_topping>sausage</pizza_topping>, <pizza_topping>pepperoni</pizza_topping> and <pizza_topping>ham</pizza_topping>. The next one I want all veggies. So, <pizza_topping>mushrooms</pizza_topping>, <pizza_topping>onions</pizza_topping>, <pizza_topping>green pepper</pizza_topping>. And then the third one I want to be <pizza_topping>half just plain cheese</pizza_topping> and then <pizza_topping>half pepperoni</pizza_topping>.
+CORRECT	No, <pizza_topping>sausage</pizza_topping>, <pizza_topping>pepperoni</pizza_topping> and <pizza_topping>ham</pizza_topping>.
+INFORM	That's fine, the veggie pizza had <pizza_topping>mushrooms</pizza_topping>, <pizza_topping>onions</pizza_topping>, and <pizza_topping>green pepper</pizza_topping>.
+CONFIRM	Yes.
+CONFIRM	Yes. That’s true.
+CONFIRM	Mm hmm.
+INFORM	Yeah, that'll be all and I would like that <delivery_method>delivered</delivery_method> to me, please, at <address>123 street lane</address>.
+INFORM	<order_time>As soon as possible</order_time>, please, because I'm having a party and I forgot to order the pizza until now, so...
+THANK	Thank you.
+INFORM	Yeah, I'll <payment_type>pay now over the phone</payment_type>. So my card type is--
+INFORM	Uh, sure, my card number is <card_number>12345</card_number>.
+INFORM	It’s expiration date is the <card_expiration>end of the year</card_expiration>.
+CONFIRM	Mm hmm. Yeah.
+THANK	Okay, thanks.
+GOODBYE	Alright, thank you. Goodbye.
+HELLO	Hello.
+REQUEST	Um, I'd like...Well, first of all, what are your, what are your different <info_type>pizza sizes</info_type>?
+INFORM	um, it’s, that's fine. I'll take. Okay, I'll take the <pizza_size>medium</pizza_size> pizza please? And I'd like <pizza_quantity>two</pizza_quantity> of them. Is that, is that possible? Can I get two pizzas in one order?
+DENY	No thank you. Just, just two.
+REQUEST	What <info_type>toppings</info_type> do you have?
+INFORM	I’ll have, I’ll have just <pizza_topping>sausage</pizza_topping>, sausage.
+INFORM	Um, can I have a <pizza_topping>quarter of the pizza have sausage</pizza_topping> on both?
+INFORM	Okay. That's, yeah, that's fine. I'll just do <pizza_topping>half on one</pizza_topping>.
+THANK	Which seems equivalent to a quarter on both, so that’s perfect. Thanks for that option.
+INFORM	Oh, let's see. I think, just, just cheese for all of them except, I want, except -- Okay, so <pizza_topping>just cheese on the other half</pizza_topping> from the sausage one and then on the other pizza, <pizza_topping>half cheese</pizza_topping> again. But then <pizza_topping>the other half -- No cheese</pizza_topping>, can I have that? Just tomato sauce?
+REQUEST	Okay, great, can you, can you read me back <info_type>what my order is</info_type>? I forget.
+CONFIRM	Mhmm.
+CONFIRM	Yeah, that sounds perfect, that's great.
+REQUEST	How do I, <info_type>how do I get the pizza<info_type>?
+INFORM	Um, <delivery_method>delivering</delivery_method> it sounds good. Can I have that?
+INFORM	Sure. My card is number is <card_number>123456789</card_number>
+INFORM	No, it's, it's just <card_type>my card</card_type>.
+REQUEST	Sorry, could you, could you read my <info_type>card info</info_type> back to me. Just make sure you got everything?
+CONFIRM	Okay, great. That sounds right.
+CONFIRM	Yeah, yeah. So, process it soon, please.
+CONFIRM	Yeah.
+INFORM	So I live at <address>123 road</address>.
+INFORM	Okay, sure. I'll come. I'll come <delivery_method>pick it up</delivery_method>.
+CONFIRM	Okay, I'll, I'll try that out. I'll see if they also sell sauce pizzas.
+THANK	Yeah, thanks.
+THANK	Okay, great.
+THANK	You've been so helpful. Thank you so much.
+GOODBYE	You too, thank you, bye.
+HELLO	Hello.
+INFORM	So it's going to be four pizzas all <pizza_size>large</pizza_size>. And one is going to be a <pizza_type>vegetarian</pizza_type> pizza. One is going to be a <pizza_type>cheese</pizza_type> pizza. One is <pizza_type>pepperoni</pizza_type>. And then the last one. Can I get <pizza_topping>half vegetarian</pizza_topping> <pizza_topping>half pepperoni</pizza_topping>?
+REQUEST	Okay, awesome. Can you can you <info_type>repeat that back to me</info_type> to make sure
+CONFIRM	Okay.
+INFORM	Okay, actually. Can I switch the cheese pizza to <pizza_topping>sausage</pizza_topping>.
+INFORM	And make sure that's <pizza_size>large</pizza_size> right
+INFORM	Okay. And can I get that <delivery_method>delivered</delivery_method>?
+REQUEST	Does that <info_type>cost</info_type> any extra?
+INFORM	Ooh, I'll go ahead and <delivery_method>pick it up</delivery_method> then.
+REQUEST	Yeah, it's, it's that one right <info_type>off of 123 road</info_type>, right?
+CONFIRM	Okay, gotcha. Yeah, so do I pay now or
+REQUEST	Okay, gotcha. When -- <order_time>When can I pick it up</order_time>?
+THANK	Okay. Sounds good. Thank you.
+HELLO	Hello, is this the pizza place?
+REQUEST	Okay, do you guys do <info_type>tuna</info_type> on pizza?
+CONFIRM	That's fine tuna is like 10 cents. Right?
+INFORM	A <pizza_topping>can of tuna</pizza_topping> and then the <pizza_topping>other half vegan</pizza_topping>, because I'm vegan, but
+THANK	Yeah, thank you.
+REQUEST	What <info_type>sizes of pizzas</info_type>, again, sorry.
+INFORM	Okay, I'll do a <pizza_size>large</pizza_size> pizza with, like I said, <pizza_topping>half tuna</pizza_topping> and <pizza_topping>half vegan</pizza_topping>.
+CONFIRM	Oh, yeah, yeah.
+CONFIRM	Yeah, I think just the one
+CONFIRM	Do whatever looks good.
+CONFIRM	That's awesome. Score.
+DENY	No.
+REQUEST	Is your place off of <info_type>345 road</info_type>?
+GOODBYE	Okay, goodbye.
+HELLO	Hi is this PizzaPizza?
+INFORM	I need <pizza_quantity>three</pizza_quantity> <pizza_size>large</pizza_size> <pizza_topping>pepperoni</pizza_topping> pizzas here as <order_time>soon as possible</order_time>.
+INFORM	<order_time>Soon as possible</order_time>.
+INFORM	Yeah, can I just <payment_type>pay</payment_type>
+REQUEST	Okay, that's pretty expensive for three pizzas. Don't you think? Can I get a <info_type>discount</info_type>?
+DENY	But I just want pepperoni.
+CONFIRM	yeah sure whatever
+INFORM	<payment_type>Pay now</payment_type> is good. So that I can hurry up.
+INFORM	<card_number>12345</card_number>
+INFORM	<card_expiration>1/20/2021</card_expiration>
+CONFIRM	Yeah.
+INFORM	My pin is <card_CVV>3333</card_CVV>.
+INFORM	<address>123 road</address>
+CONFIRM	Okay, you better be faster.
+GOODBYE	Okay, goodbye.
+HELLO	Hi can i have pizza
+CONFIRM	Okay
+CONFIRM	Yes!!!!
+INFORM	The <pizza_size>biggest</pizza_size> please
+INFORM	I think <payment_type>my mom can pay</payment_type>
+INFORM	<order_time>Now</order_time>!
+INFORM	My name is <order_name>bob</order_name>
+CONFIRM	Okay
+GOODBYE	Bye!!!! :)
+REQUEST	Hi, I’m new to ordering online, <info_type>what do I do</info_type>?
+REQUEST	<info_type>Did you see my message</info_type>, sorry I am old.
+INFORM	1 <pizza_size>large</pizza_size> <pizza_type>cheese</pizza_type> pizza and 1 <pizza_size>large</pizza_size> <pizza_topping>ham</pizza_topping> pizza please and thank you
+REQUEST	Yes, thank you. <info_type>Where should I pick it up</info_type>?
+INFORM	Oh wow you deliver! Technology is wild these days. <delivery_method>Deliver it to me</delivery_method>, please.
+INFORM	<address>123 road</address> off of 456
+INFORM	<payment_type>Real paper money</payment_type>, none of that plastic card money please.
+THANK	Thank you robot person.
+REQUEST	Do you guys not take <info_type>phone orders</info_type> anymore?
+INFORM	Okay fine. I want <pizza_quantity>3</pizza_quantity> pizzas.
+INFORM	All just <pizza_type>cheese</pizza_type>, <pizza_topping>no toppings</pizza_topping>. That’s all.
+REQUEST	<info_type>How do I get the pizzas</info_type>? Are you going to ask me to <info_type>pay</info_type>?
+INFORM	Okay, well, I want to pay with <payment_type>card</payment_type> but I’m not going to put my card info into an online chatbox. How can I pay?
+REQUEST	I don’t want them to know my card info either. <info_type>Can I pick up the pizza</info_type>?
+REQUEST	Okay when will it be <info_type>ready</info_type>?
+INFORM	Okay I’m actually sitting outside so I’ll <payment_type>come in</payment_type> to wait.
+GOODBYE	Okay bye
+CONFIRM	Yes, please!
+INFORM	Yum, sounds good. I’ll have <pizza_quantity>one</pizza_quantity> of <pizza_type>each</pizza_type>.
+REQUEST	<info_type>$2 per pizza or total</info_type>?
+REQUEST	Can I pay with <info_type>bitcoin</info_type>?
+REQUEST	Awesome, I will transfer the funds. When can I expect the pizza to be <info_type>delivered</info_type>?
+INFORM	<address>654 lane</address>!
+THANK	Sounds good, thanks!
+REQUEST	<info_type>What do you have</info_type>?
+REQUEST	Is the pepperoni free range?
+REQUEST	Were the pigs given a happy life?
+INFORM	Hmm, okay. What is the <pizza_type>vegan</pizza_type> pizza?
+INFORM	Okay, I’d like the <pizza_type>vegan</pizza_type> pizza with the regular <pizza_topping>pepperoni</pizza_topping> please.
+REPEAT	Can you read me back my order first?
+CORRECT	Oh, I wanted the pizza to be a <pizza_size>small</pizza_size>. Can you change that?
+THANK	Thank you!
+INFORM	Okay, I’ll pay when I <payment_type>pick it up</payment_type>.
+REQUEST	Is this <info_type>pizza palace</info_type>?
+REQUEST	Do you have <info_type>cheese pizza</info_type>?
+INFORM	I’ll take <pizza_quantity>2</pizza_quantity> <pizza_size>large</pizza_size> <pizza_type>cheese</pizza_type> pizzas and some <side_order>garlic breadsticks</side_order>
+REQUEST	Okay that works, how much will that <info_type>cost</info_type> me?
+INFORM	I will <delivery_method>pick it up</delivery_method>, when will it be ready?
+INFORM	I will pay when I <payment_type>arrive</payment_type>.
+INFORM	Hi, I’d like to order <pizza_quantity>two</pizza_quantity> pizzas please.
+INFORM	I’d like <pizza_quantity>one</pizza_quantity> <pizza_type>veggie</pizza_type> and <pizza_quantity>one </pizza_quantity><pizza_type>meat</pizza_type> pizza.
+INFORM	Both <pizza_size>large</pizza_size>.
+CORRECT	Oh, actually, wait, can I have <pizza_quantity>two</pizza_quantity> <pizza_type>veggie</pizza_type> pizzas instead?
+INFORM	Oh, in that case I want <pizza_quantity>two</pizza_quantity> <pizza_type>meat</pizza_type> pizzas.
+REQUEST	Do you guys sell <info_type>soda</info_type>?
+INFORM	Great, I’ll take one <side_order>2 liter of Coke</side_order>.
+CONFIRM	I guess so, sure.
+REQUEST	Okay, when will it be <info_type>ready</info_type>?
+CONFIRM	Okay, see you then.
+INFORM	I’d like <pizza_quantity>one</pizza_quantity> <pizza_type>pepperoni</pizza_type> and <pizza_quantity>one</pizza_quantity> <pizza_type>sausage</pizza_type>.
+INFORM	<pizza_size>Medium</pizza_size> for both, please.
+THANK	Thanks, see you soon.
+REQUEST	Do you serve <info_type>calzones</info_type>?
+INFORM	Wow great, can I get a <side_order>calzone with all your veggie toppings inside</side_order>?
+REQUEST	Does it still have <info_type>cheese and sauce</info_type>?
+INFORM	Okay, I’ll have <side_order>two of those salad calzones</side_order> and that’s it.
+INFORM	I’ll have it <delivery_method>delivered</delivery_method>.
+INFORM	<address>123 Road street</address>.
+REQUEST	Can I <info_type>pay over the phone</info_type>?
+INFORM	Excuse me, I’m a man. But anyway, my card number is <card_number>123456789</card_number>.
+INFORM	<tip_amount>0%</tip_amount> tip because you offended me.
+CONFIRM	Okay, I’ll see you at 6pm then.
+INFORM	I’d like <pizza_quantity>two</pizza_quantity> <pizza_size>large</pizza_size> <pizza_type>mediteranean</pizza_type> pizzas please, I have a hungry family.
+INFORM	<pizza_topping>Olives</pizza_topping>, <pizza_topping>feta,</pizza_topping> and <pizza_topping>tzatziki sauce</pizza_topping>.
+REQUEST	Do you have <info_type>meat lovers pizza</info_type>?
+INFORM	Sounds good, I’ll take <pizza_quantity>two</pizza_quantity> of <pizza_type>those</pizza_type>, do you do delivery?
+INFORM	Okay then I will <delivery_method>pick it up</delivery_method>, <info_type>when will it be ready</info_type>?
+REQUEST	Okay sounds good. <info_type>Do I pay when I arrive</info_type>?
+THANK	Okay, thanks!
+INFORM	I’d like <pizza_quantity>three</pizza_quantity> pizzas, <pizza_quantity>One</pizza_quantity> <pizza_size>large</pizza_size> <pizza_type>haiwaiian</pizza_type>, <pizza_quantity>one</pizza_quantity> <pizza_size>medium</pizza_size> <pizza_type>margarita</pizza_type>, <pizza_quantity>one</pizza_quantity> <pizza_size>small</pizza_size> <pizza_type>cheese</pizza_type>.
+INFORM	<pizza_quantity>One</pizza_quantity> <pizza_size>large</pizza_size> <pizza_type>haiwaiian</pizza_type>, <pizza_quantity>one</pizza_quantity> <pizza_size>medium</pizza_size> <pizza_type>margarita</pizza_type>, <pizza_quantity>one</pizza_quantity> <pizza_size>small</pizza_size> <pizza_type>cheese</pizza_type>.
+REQUEST	<info_type>When should I pick it up</info_type>?
+INFORM	Can I <payment_method>pay when I get there</payment_method>, I’d rather not use my card over the phone.
+THANK	Okay sounds good! Thank you for being so quick.
+REQUEST	Hi, what’s the price for your <info_type>largest pizza size</info_type>?
+REQUEST	Can you <info_type>recommend</info_type> any other pizza places around here?
+GOODBYE	Okay, I think I might go with them instead. Bye.
+INFORM	<pizza_quantity>6</pizza_quantity> pizzas please.
+INFORM	<pizza_quantity>3</pizza_quantity> will be <pizza_type>cheese</pizza_type> pizza and <pizza_quantity>2</pizza_quantity> will be <pizza_type>pepperoni</pizza_type>, and 1 will be <pizza_topping>half vegetable</pizza_topping> and <pizza_topping>half cheese</pizza_topping>
+INFORM	All <pizza_quantity>3</pizza_quantity> will be <pizza_size>large</pizza_size> <pizza_type>cheese</pizza_type> pizzas.
+INFORM	Both will be <pizza_size>small</pizza_size>.
+INFORM	<pizza_size>Large</pizza_size>.
+CORRECT	Sorry the last pizza should also be <pizza_size>large</pizza_size>.
+REQUEST	Can we do <info_type>pickup</info_type>?
+INFORM	I will pay <payment_method>when I arrive</payment_method>, in cash.
+GOODBYE	Sounds good, see you then.
+INFORM	I’ll have a <pizza_type>cheese</pizza_type> pizza, I know it’ll be ready in 20 so I’ll see you then.
+INFORM	Oh right, a <pizza_size>small</pizza_size>, please.
+INFORM	No thanks, I just want a <pizza_size>small</pizza_size>.
+INFORM	request
+INFORM	I’d rather pay in cash <payment_method>when I get there</payment_method>.
+INFORM	If you can do <order_time>20 minutes</order_time> from now, that would be great.
+GOODBYE	Alright, see you then.
+HELLO	I’m great, thanks for asking! How’re you?
+INFORM	How about <pizza_quantity>3</pizza_quantity> <pizza_size>large</pizza_size> <pizza_type>pepperoni</pizza_type> pizzas, the classic pizza.
+REQUEST	Nice! Do you do <info_type>delivery</info_type>?
+INFORM	Ah, we can <delivery_method>pick it up</delivery_method> instead if that will be faster.
+REQUEST	Okay sounds, good. <info_type>Can I pay now</info_type>?
+INFORM	My card is <card_number>567856785678</card_number> and expiration is <card_expiration>13/2020</card_expiration>
+THANK	Thanks! See you in 30.
+INFORM	<delivery_method>Take out</delivery_method>
+REQUEST	Do you guys put <info_type>pasta on the pizzas</info_type> ever?
+REQUEST	Okay, fair point. What <info_type>toppings</info_type> do you have?
+INFORM	Okay, can I get <pizza_quantity>one</pizza_quantity> <pizza_size>medium</pizza_size> pizza with <pizza_topping>olives</pizza_topping> and <pizza_topping>mushrooms</pizza_topping>?
+REQUEST	Do you have any <info_type>anchovies</info_type>?
+REQUEST	Oh, okay, no anchovies. How about <info_type>sardines</info_type>?
+DENY	No thanks, that sounds kind of gross. I’ll just have the pizza I ordered.
+INFORM	I wanted a <pizza_size>medium</pizza_size> pizza with <pizza_topping>olives</pizza_topping> and <pizza_topping>mushrooms</pizza_topping>.
+INFORM	Okay, can I pay with <payment_method>card</payment_method>?
+INFORM	My card number is <card_number>0987654321</card_number> and my expiration date is <card_expiration>tomorrow</card_expiration>.
+GOODBYE	Okay, great, see you then.
+HELLO	Hi.
+REQUEST	That’s a lot of choices, </info_type>what kind of pizzas do you have</info_type>?
+INFORM	Wow. Maybe I should get just a <pizza_type>cheese pizza</pizza_type>.
+INFORM	Okay. <pizza_size>Medium</pizza_size> please.
+INFORM	I think <pizza_size>medium</pizza_size> will be fine, thanks.
+INFORM	Oh okay. I will <payment_type>pay when I get there</payment_type>.
+INFORM	Yeah, <pizza_size>medium</pizza_size>.
+INFORM	Just <pizza_type>cheese</pizza_type>. And just <pizza_quantity>one</pizza_quantity> pizza.
+REQUEST	<info_type>How much</info_type> will that be?
+CONFIRM	Yeah, I’m sure.
+CONFIRM	Great, see you then.
+INFORM	I will have as much pizza as you can make, just kidding, <pizza_quantity>3</pizza_quantity> pizzas.
+INFORM	<pizza_quantity>One</pizza_quantity> <pizza_size>large</pizza_size> <pizza_type>cheese</pizza_type>, <pizza_quantity>one</pizza_quantity> <pizza_size>large</pizza_size> <pizza_type>meat lovers</pizza_type>, and <pizza_quantity>one</pizza_quantity> <pizza_size>large</pizza_size> <pizza_type>buffalo chicken</pizza_type>
+REQUEST	Okay awesome, <info_type>when can I expect it at my door</info_type>?
+INFORM	<address>123 Gugenheim Hall</address>
+INFORM	request
+CONFIRM	Yes please.
+GOODBYE	Chao!
+REQUEST	Hi, so, <info_type>what does that mean exactly</info_type>?
+REQUEST	Oh, interesting. What veggies are on the <info-type>bulbasaur’s veggie delight</info_type> pizza?
+REQUEST	Hmm, what’s the <info_type>cheapest pizza</info_type> you sell?
+REQUEST	<info_type>How can I get the most toppings for the least amount of money</info_type>? I don’t want just a cheese pizza.
+REQUEST	Okay, I want to do that. <info_type>Can you choose 3 random veggie</info_type> toppings for me?
+INFORM	<pizza_topping>Pineapple</pizza_topping> and <pizza_topping>onion</pizza_topping> sounds good, but ham isn’t vegetarian. Can I have <pizza_topping>olives</pizza_topping> instead?
+REQUEST	Yes, that’s it. Is it okay if I <info_type>pay in change</info_type>?
+REQUEST	Okay, <info_type>will it be ready in 20 minutes</info_type>?
+REQUEST	Is it okay for me to <info_type>come in about 30 minutes</info_type>?
+GOODBYE	Bye!
+INFORM	Hi, I’d like <pizza_quantity>3</pizza_quantity> <pizza_size>large</pizza_size> <pizza_type>pepperoni</pizza_type> pizzas.
+CONFIRM	Sure.
+INFORM	Hi, I think I was just speaking to you, I’m ordering <pizza_quantity>3</pizza_quantity> <pizza_size>large</pizza_size> <pizza_type>pepperoni</pizza_type> pizzas?
+INFORM	I’ll <delivery_method>pick it up</delivery_method> and <payment_type>pay when I get there</payment_type>.
+INFORM	<pizza_quantity>2</pizza_quantity> <pizza_type>pepperoni</pizza_type> pizzas please
+INFORM	A <side_order>large diet coke</side_order>
+GOODBYE	Goodbye.
+INFORM	Hi, I’d like to order <pizza_quantity>two</pizza_quantity> pizzas please.
+HELLO	*bark* Hi, sorry my dogs are barking, one second.
+REPEAT	Hi are you still there?
+INFORM	<pizza_quantity>3</pizza_quantity> pizzas and a 2 liter of soda
+INFORM	Hi, <side_order>sprite</side_order> please.
+INFORM	<pizza_topping>All cheese</pizza_topping>, some is for my *bark* dogs
+INFORM	My card is <card_number>908765</card_number>.
+INFORM	<delivery_method>Delivery</delivery_method> please, my address is <address>789 the best house on the block</address>
+THANK	Sounds good! Thanks.
+HELLO	Hi, I’ll like to order a pizza please.
+INFORM	Uhh one <pizza_size>large</pizza_size> pizza, uh <pizza_topping>one half with mushrooms</pizza_topping> and <pizza_topping>one half with chicken</pizza_topping>.
+INFORM	Uhh <pizza_topping>margarita sauce</pizza_topping>.
+DENY	Um no, I am – uhh that is, that is all.
+INFORM	Uhh <delivery_method>delivery</delivery_method>.
+INFORM	Uhh to <address>Street 123 Apartment 7</address>.
+INFORM	Uhh <payment_type>cash</payment_type>.
+CONFIRM	Sounds good. Thank you.
+INFORM	Hi I’ll like to order <delivery_method>delivery</delivery_method> please.
+INFORM	Uh can I have one <pizza_size>small</pizza_size> pizza, one <pizza_size>medium</pizza_size> pizza, and one <pizza_size>large</pizza_size> pizza, and I would like uh <pizza_topping>only chicken</pizza_topping> on the <pizza_size>small</pizza_size> pizza and then I want <pizza_topping>chicken</pizza_topping>, <pizza_topping>mushroom</pizza_topping>, and <pizza_topping>tomato sauce</pizza_topping> on the medium pizza, and then I want uh <pizza_topping>alfredo sauce</pizza_topping> on the third pizza but um only add <pizza_topping>black olives</pizza_topping> and um <pizza_topping>ham</pizza_topping> on it, but <pizza_topping>no chicken</pizza_topping>.
+CONFIRM	Uh that’s, that’s right, yeah.
+INFORM	Uh, uh, for the other two, I’ll have <pizza_topping>margarita sauce</pizza_topping>, and make sure that all this information is correct cause my family has a lot of allergies, please.
+CONFIRM	Mm-hmm, yeah.
+INFORM	Uhh, um just uh make sure to uh <pizza_topping>not put too much cheese</pizza_topping> either.
+CONFIRM	Yup. Mm-hmm.
+CONFIRM	That sounds really good. Thanks for the offer.
+INFORM	Just some <side_order>bottled water</side_order>. Um, yeah, just some bottled water.
+CONFIRM	Yeah, that one.
+THANK	Thank you so much.
+INFORM	Mm-hmm, I live on <address>Street 123 at Apartment 7</address>.
+CONFIRM	Mm-hmm.
+GOODBYE	Bye!
+INFORM	Umm uhh uhh so can I please have a, a <pizza_size>large</pizza_size> pizza please?
+INFORM	Uhh no umm actually uh can I have umm some <pizza_topping>pepperoni</pizza_topping> on it with some uh <pizza_topping>black olives</pizza_topping> and um some <pizza_topping>ham</pizza_topping>?
+CONFIRM	Yeah.
+CONFIRM	Uh, yeah, sure! I guess I’ll go with that then.
+CONFIRM	Uh yeah, large pizza.
+CONFIRM	Uh yeah that sounds great.
+DENY	Uhh, I, um, no, no dessert.
+INFORM	Well, I guess uh <side_order>two brownies</side_order> would sound good.
+CONFIRM	You know what, you’re right, yeah ten brownies.
+INFORM	Uh, yes, <delivery_method>delivery</delivery_method> to <address>Street 123 Apartment 7</address>.
+DENY	Uh, no, that’s perfectly fine.
+GOODBYE	Mm-hmm.
+INFORM	Just like, uh you know, a regular pizza. You know, those with the good ol <pizza_topping>meatballs</pizza_topping>.
+REQUEST	Uh, <info_type>what else do you have to go with it</info_type>? I mean, I can’t just eat pizza, right? That-that-those things are dry.
+INFORM	Um fries, um I don’t think that’s a good idea. Maybe can I have <side_order>salad</side_order>?
+INFORM	Uhh I’m really feeling-feeling like a medium salad, but uhh maybe a <side_order>large salad</side_order> will go fine.
+CONFIRM	Yeah.
+INFORM	Um, I will just like some um <side_order>thousand island sauce</side_order>, and maybe some <side_order>croutons</side_order>.
+INFORM	Maybe <side_order>double the serving of croutons</side_order>.
+INFORM	Okay, cool. Can you guys <order_time>arrive in half an hour</order_time>?
+REQUEST	Eh I’m feeling really hungry right now. Can you just ask your-your <info_type>delivery men to-to hurry up</info_type>?
+INFORM	Uh I’m living at <address>Avenue 123</address>.
+GOODBYE	Yeah, see you in a bit.
+INFORM	Uh I want-I want pizza really fast, uh just the standard pizza, no-no frills, just <pizza_type>pepperoni</pizza_type>, um yeah maybe <side_order>a bottle of Coke</side_order>, that’s about it.
+DENY	Eh, it’s fine, I-I-I don’t need that, I just need the pizza delivered to me really fast.
+INFORM	Um, no I don’t need that. I think it’ll just take more time. Um could you just deliver to me my pizza <order_time>as soon as possible</order_time>?
+DENY	Not really, that’s fine.
+DENY	That’s fine, it’s fine. Yeah, I-I-I, yeah, I don’t need an additional topping, that’s fine, yeah.
+INFORM	Uh <order_name>John Doe</order_name>, uh <address>Avenue 123</address>.
+THANK	Yeah, sure, thank you.
+REQUEST	Uh, I have – I saw – I saw the flyer that you have this really great dough for <info_type>$5.99 for two large pizzas</info_type>. Is that true?
+CONFIRM	Yeah, that-that’s alright.
+REQUEST	Um is there any restrictions on the <info_type>toppings</info_type> I can have?
+INFORM	Okay, so I would like some <pizza_topping>pepperoni</pizza_topping>, some <pizza_topping>peppers</pizza_topping>, and maybe some <pizza_topping>chicken bites</pizza_topping>.
+CONFIRM	Uh yeah sure that goes well as well.
+REQUEST	Are there any <info_type>discounts</info_type> you have besides?
+REQUEST	Uh what <info_type>kind of seasoning</info_type> do you go with it? Like the —
+CONFIRM	Well I don’t really like cayenne pepper but since it’s so cheap, I’ll just take it. Um.
+REQUEST	<info_type>Any other things on discount</info_type>? Just on a really tight budget, you know?
+CONFIRM	Okay. Um, yeah, it’s fine. Yeah I’m-I’m fine with ranch sauce. I’ll take it. Yeah.
+REQUEST	And uh for <info_type>delivery, um is-is it-is it free</info_type>?
+INFORM	So I live at <address>Avenue 123</address>, could you help me to check if it’s um –
+REQUEST	Okay, um, I think the last thing I want to go with my meal is some <info_type>drinks. Um what is the cheapest option you have</info_type>?
+REQUEST	Um well I have water at home. I just want some <info_type>soda</info_type>, you know.
+REQUEST	Do you have the <info_type>diet versions of that</info_type>?
+REQUEST	Oh okay. <info_type>How much is it</info_type>?
+REQUEST	Oh <info_type>can you do lower</info_type>?
+REQUEST	Yeah. And <info_type>how much would that be</info_type>?
+REQUEST	Uh how - so <info_type>what-what’s the net discount I get for my drink</info_type>?
+CONFIRM	Um, sounds like a good deal. I’ll-I’ll take it.
+REQUEST	<info_type>How long would delivery take</info_type>?
+GOODBYE	Okay, see you later. Bye!
+INFORM	Hi, I’ll like to order a <pizza_size>large</pizza_size> pizza please
+INFORM	<pizza_topping>pepperonis</pizza_topping>, <pizza_topping>black olives</pizza_topping>, and <pizza_topping>jalapeños</pizza_topping>
+INFORM	can I also get a <side_order>large coke</side_order> and <side_order>a side salad</side_order> with my pizza
+DENY	nope that is all
+THANK	Okay thank you!
+INFORM	hi can i get <pizza_quantity>two</pizza_quantity> <pizza_size>large</pizza_size> pizzas
+INFORM	<pizza_topping>pepperonis</pizza_topping>, <pizza_topping>black olives</pizza_topping>, and <pizza_topping>jalapeños</pizza_topping>, make sure you don’t miss anything if you want your tip
+CONFIRM	yes yes yes
+CONFIRM	yessssss
+CONFIRM	yes
+INFORM	tell your delivery men to get it to me in <order_time>thirty minutes</order_time>
+GOODBYE	good
+INFORM	Hi I’ll like to order a <pizza_size>large</pizza_size> pizza
+INFORM	Please make it <pizza_topping>one half mushroom</pizza_topping> and <pizza_topping>one half pepperoni</pizza_topping> and don’t mix them. My son is allergic to mushroom.
+CONFIRM	Yes that’ll be very helpful
+CONFIRM	Yes, thank you for being so accommodating
+THANK	thank you!
+INFORM	Hi I was wondering if I can place an order for a <pizza_size>large</pizza_size> pizza?
+CONFIRM	That sounds good, yeah I’ll have that
+CONFIRM	if that’s not too much trouble!
+CONFIRM	yes thank you for taking the time to take my order, hope I wasn’t bothering you too much
+CONFIRM	that all sounds good, thank you!
+INFORM	Hi I’ll like to order a <pizza_size>large pizza</pizza_size> with <pizza_topping>pepperonis</pizza_topping> and <pizza_topping>olives</pizza_topping>, can you get it to me <order_time>in a half hour</order_time>?
+DENY	no thank you, I just want the pizza
+DENY	I have drinks at home
+DENY	PLEASE JUST GIVE ME MY PIZZA I AM IN A RUSH!!!
+INFORM	Hi I wanted to order a <pizza_size>large</pizza_size> pizza. I have a coupon with me with code XXXXX, can you check if it’s valid?
+REQUEST	are there <info_type>any discounts if I choose a certain amount of toppings</info_type>?
+INFORM	I only want <pizza_topping>pepperoni</pizza_topping> then
+INFORM	<pizza_topping>chicken</pizza_topping> then
+REQUEST	<info_type>what do you have available</info_type> then
+INFORM	<pizza_topping>bacon strips</pizza_topping> please
+INFORM	<pizza_topping>veggies</pizza_topping>
+REQUEST	<info_type>is this a bot</info_type>? I don’t wanna talk to no bot, I want a real human talking to me
+INFORM	get me a <pizza_size>large</pizza_size> pizza and get it to me <order_time>asap</order_time>
+INFORM	I <pizza_topping>don’t want pepperoni</pizza_topping>, I want <pizza_topping>jalapeños</pizza_topping> and make sure there’s a lot
+CANCEL	you know what, cancel my order
+CONFIRM	fine but you better not expect me to tip your driver
+CONFIRM	UGH FINE
+GOODBYE	good riddance
+INFORM	hi I was wondering if I can place an order for a <pizza_size>large</pizza_size> pizza please?
+INFORM	can I get <pizza_topping>pepperonis</pizza_topping> and <pizza_topping>jalapeños</pizza_topping> please, if that’s not too much trouble?
+INFORM	oh no! sorry, can I get <pizza_topping>black olives</pizza_topping> and <pizza_topping>chicken</pizza_topping> instead?
+CONFIRM	yes that sounds good
+CONFIRM	no problem at all!
+INFORM	Hi I want a <pizza_size>large</pizza_size> pizza with <pizza_topping>chicken</pizza_topping> and <pizza_topping>mushrooms</pizza_topping>. Can I get <pizza_topping>vegan cheese</pizza_topping>? My whole family is lactose intolerant.
+DENY	I have drinks at home. We’re diabetic so we also cannot consume sugar, so it’s best to trust the drinks at home, you understand right?
+CONFIRM	well I suppose we can try it
+DENY	No thank you, I have a rule that no desserts after 6pm. It gets the kids too hyper
+INFORM	Hi I want <pizza_quantity>20</pizza_quantity> <pizza_size>large</pizza_size> pizzas
+INFORM	Make <pizza_quantity>5</pizza_quantity> have <pizza_topping>mushrooms</pizza_topping> and <pizza_topping>chicken</pizza_topping> but <pizza_topping>no olives</pizza_topping>, <pizza_quantity>5</pizza_quantity> with <pizza_topping>olives</pizza_topping> and <pizza_topping>mushrooms</pizza_topping> and <pizza_topping>chicken</pizza_topping>, <pizza_quantity>5</pizza_quantity> with all the toppings you have, and <pizza_quantity>5</pizza_quantity> with <pizza_topping>all the toppings you have</pizza_topping> but placed in alphabetical order pls
+CONFIRM	Yes
+INFORM	In fact <pizza_toppings>double the toppings for 5 pizzas</pizza_topping>
+CONFIRM	Yes
+DENY	That’s okay, none of us are allergic, I think
+INFORM	Yes, please get us <side_order>one of each of the sodas</side_order> and then <side_order>one with all the sodas mixed together</side_order>, but don’t label which is which
+CONFIRM	Yes, get them as soon as you can please! We’ll tip generously!
+INFORM	Can I get a <pizza_size>large</pizza_size> pizza with <pizza_type>four cheeses</pizza_type>
+INFORM	I also want <side_order>a large bottle of diet coke</side_order> please
+CONFIRM	Yes that is my order
+CONFIRM	Yes that’s right
+THANK	Thank you
+INFORM	I want a <pizza_size>large</pizza_size> <pizza_topping>meatball</pizza_topping> pizza and <side_order>a bottle of coke</side_order> delivered to me <order_time>asap</order_time>
+INFORM	if you don’t want your customers to be unhappy, <order_time>get my pizza here fast</order_time>
+INFORM	I want a <pizza_size>large</pizza_size> pizza
+INFORM	so on the first <pizza_topping>half i’ll have sausage and tomatoes</pizza_topping>
+INFORM	and the <pizza_topping>second half chicken and peppers (only red peppers though, please pick out the green and yellow ones)</pizza_topping>
+REQUEST	you mean I can get a <info_type>whole pizza more for free</info_type>?
+CONFIRM	ok sure that’s great thank you so much
+INFORM	Can I get a <pizza_size>small</pizza_size> pizza please?
+INFORM	But you’re right I will get a <pizza_size>medium</pizza_size> pizza instead
+INFORM	just some <pizza_topping>peppers</pizza_topping> and <pizza_topping>roasted chicken</pizza_topping>
+DENY	No that’s all thank you so much for your suggestion!
+INFORM	Can i get a <pizza_size>large</pizza_size> <pizza_topping>sausage</pizza_topping> pizza fast?
+DENY	I don’t need any of that - just my pizza will do
+DENY	I have my own thank you
+INFORM	Please get my pizza here <order_time>asap</order_time>
+THANK	Thank you
+INFORM	it says i can get <pizza_quantity>2</pizza_quantity> <pizza_size>large</pizza_size> pizza for 9.99
+REQUEST	Nice <info_type>how many toppings can I get with that</info_type>?
+INFORM	ok I will like <pizza_topping>sausage</pizza_topping> <pizza_topping>peppers</pizza_topping> and <pizza_topping>chicken</pizza_topping>
+INFORM	how about <pizza_topping>pepperoni</pizza_topping>?
+INFORM	I would like some <pizza_topping>roast beef</pizza_topping>
+INFORM	can I have <side_order>12 drumlets</side_order> please? I believe I have a coupon for them at 2.99
+DENY	nope that’s all
+INFORM	I want a <pizza_size>large</pizza_size> good old <pizza_topping>pepperoni</pizza_topping> pizza
+INFORM	Come on <pizza_topping>pepperoni</pizza_topping> is the best
+DENY	nah just the pizza
+INFORM	speedy <delivery_method>delivery</delivery_method>?
+GOODBYE	That’s more like it. Bye
+INFORM	I would like a <pizza_size>large</pizza_size> pizza
+INFORM	for half of the pizza, I would like your <pizza_crust>speciality extra cheesy crust</pizza_crust> and <pizza_topping>pepperoni</pizza_topping>
+INFORM	For the other half I want <pizza_topping>no cheese</pizza_topping> at all and just <pizza_topping>tomatoes</pizza_topping> and <pizza_topping>olives</pizza_topping>
+CONFIRM	Yes I would like some. However, no salt on them please
+DENY	Unfortunately they do - they have ADHD so no sweets
+INFORM	I am hoping to get <pizza_quantity>2</pizza_quantity> <pizza_size>large</pizza_size> pizza in the promo deal for 9.50
+REQUEST	<info_type>how much</info_type> will that be for?
+REQUEST	Sure that’s great! Are there <info_type>discounts</info_type> for sides as well?
+DENY	No worries I am on a really tight budget
+CONFIRM	That will be good thank you!
+THANK	Thank you too
+INFORM	I want a <pizza_size>large</pizza_size> <pizza_type>meatball</pizza_type> pizza fast
+CONFIRM	that will do
+CONFIRM	oh what? yeah sure whateveer
+INFORM	just get them here <order_time>asap</order_time>
+DENY	no need for sides just the pizza
+INFORM	maybe a <side_order>bottle of coke</side_order> as well
+REQUEST	<info_type>what else</info_type> do you have then?
+CONFIRM	That’s fine
+INFORM	please get my pizza <order_time>fast</order_time>
+INFORM	Hi I’ll like a <pizza_size>large</pizza_size> pizza please
+INFORM	<pizza_topping>Mushrooms</pizza_topping>, <pizza_topping>pepperoni</pizza_topping>, and <pizza_topping>black olives</pizza_topping>
+CORRECT	Yes can I have <info_type>chicken</info_type> instead?
+CONFIRM	That’s correct, thank you!
+INFORM	I would like a <side_order>large fries</side_order> as well as a <pizza_size>large</pizza_size> <pizza_type>meatball</pizza_type> pizza
+INFORM	ok I’m back - drinks - maybe <side_order>diet coke</side_order>?
+CONFIRM	sure that is correct
+CONFIRM	Yes please
+THANK	Thank you!
+INFORM	Hi, I want a <pizza_size>large</pizza_size> pizza with <pizza_topping>meatballs</pizza_topping> and <pizza_topping>pepperonis</pizza_topping> with a side of <side_order>large fries</side_order>
+INFORM	Can you get it to me quick? I’m in a <order_time>rush</order_time>
+INFORM	Yeah <side_order>three large cokes</side_order>
+HELLO	hellooooo?
+REPEAT	excuse me!
+INFORM	just get my order to me <order_time>asap</order_time>
+GOODBYE	goodbye
+INFORM	A <pizza_size>large</pizza_size> pizza with <pizza_topping>mushrooms</pizza_topping>
+INFORM	maybe some <side_order>coleslaw</side_order> and <side_order>fanta orange</side_order>
+CONFIRM	THat’s fine
+REQUEST	perhaps some <info_type>brownies</info_type>?
+INFORM	That’s great get me a <side_order>dozen</side_order>
+THANK	Sure thank you too
+REQUEST	Hi um I'm throwing a graduation party for my brother, um, it's actually at the end of the week, but I'm shopping around for prices now. Um, how much do you, <info_type>how many pizzas Do you think I would need for 50 people</info_type>?
+REQUEST	Okay. Um, and <info_type>what size</info_type> would those need to be?
+REQUEST	Okay. Um, what is the <info_type>price of your large pizzas</info_type> and is this the store. I saw coupons online for?
+REQUEST	Do you have any <info_type>coupons</info_type> or?
+REQUEST	Hmm, okay. So, um, and also just, I just don't even know like, what kinds of pizzas I should order for that many people. Um like, what do you think are like the <info_type>favorites</info_type> here?
+REQUEST	Just cheese or pepperoni?
+INFORM	Okay. Extra cheese on that one. Um, and also we have somebody who's allergic to <allergy>dairy</allergy>. It's just one person, but I wanna
+REQUEST	Dairy, so they can't have any pizza with cheese. I was wondering if you have any just, like, <info_type>red pizza without cheese for them</info_type>?
+REQUEST	Okay. So, so then <info_type>that one doesn't have any cheese right</info_type>?
+INFORM	Okay, so I'm gonna have to get at least <pizza_quantity>one</pizza_quantity> of <pizza_type>those</pizza_type>
+REQUEST	Yes. So how many, <info_type>how many did you say I would need again six or seven</info_type>?
+INFORM	Okay, this is okay so you have six specialty pizzas, but that was not the most popular. The most popular are just plain. So I think I'm going to get <pizza_quantity>one</pizza_quantity> <pizza_type>vegan</pizza_type>, <pizza_quantity>two</pizza_quantity> <pizza_type>pepperoni</pizza_type>, um...hmm, I don't know. Should I get a plain pizza with pineapple, or should I get the Hawaiian pizza? It's, it's just so hard to know what what's gonna work for 50 people
+INFORM	Um no, I'll go with the <pizza_type>Hawaiian</pizza_type> people know what that is. So, you know, hopefully there will be some people who like that.
+REQUEST	Yeah. Yeah, true. Um, but <info_type>how many am I at right now</info_type> like four? Yeah, I think I’m at four right?
+REQUEST	Okay, I think, I think I had two pepperoni as well. So I'm gonna need more. What's your <info_type>favorite pizza</info_type> here?
+INFORM	Okay, so yeah, to have a <pizza_type>vegan</pizza_type> pizza <pizza_type>meat lovers</pizza_type> pizza would probably be a good idea too, um, what are the meats on that pizza?
+CONFIRM	Okay, okay that's- that should work. Um, there's something for everybody there, right?
+REQUEST	So I see some of your toppings cost more than others. Some are two dollars and some are a dollar fifty. <info_type>Do you think it's worth it to get kind of like the premium toppings</info_type>? Or I guess the, I guess the dollar fifty toppings are just cheese. So I guess I will have to spend that extra fifty cents for toppings won’t I?.
+INFORM	So those are pineapple, green peppers, red onions, mushrooms and black olives. Right? So I want them ( Mmm) <pizza_quantity>two</pizza_quantity> pizzas that just have <pizza_topping>all</pizza_topping> of those things on it.
+CONFIRM	Mm hmm.
+CONFIRM	Mhm.
+REQUEST	I'm gonna need some sides. Also the pizza crust. Should-What, what, <info_type>what do you think is the best<info_type>? Thin, regular, deep-dish or just like all combinations of all of them?
+INFORM	Yeah, I'm going to go for <pizza_crust>regular</pizza_crust>
+INFORM	Okay, the sides, I will get <side_order>two orders of each of the sides</side_order>.
+INFORM	I think I’ll also get <side_order>three colas</side_order> and <side_order>two orange sodas</side_order>.
+INFORM	I, I think I should <delivery_method>pick up</delivery_method> because is it- is this okay this is actually for-for Friday, which is like five or six days from now. Um, but I just wanted to call ahead and make sure this was all, you know I could that I could afford it for this party and that it um, that I would like the pizzas.
+INFORM	[overlapping]Okay, I can- I can pick it up on <order_time>Friday</order_time>.
+INFORM	Um, I think bout <order_time>3pm</order_time>.
+INFORM	Like I can <payment_type>pay right now</payment_type>.
+INFORM	Okay. So the card is mycard numbers <card_number>one-two-three-four-five</card_number> and the expiration is the <card_expiration>end of the year</card_expiration>.
+REQUEST	Perfect. So I can come <info_type>pick this up 3 pm Friday</info_type>.
+THANK	Okay, Thank you.
+REQUEST	Hi, does Tony's sell <info_type>slices</info_type> or just whole pizzas?
+REQUEST	Do you do any <info_type>half and half pizzas<info_type>?
+INFORM	the first person wants a pizza with <pizza_topping>bacon</pizza_topping>, <pizza_topping>sausage</pizza_topping>, and <pizza_topping>green peppers</pizza_topping>
+INFORM	<pizza_crust>thin crust</pizza_crust> I think
+INFORM	and we'll make it <pizza_size>small</pizza_size>
+INFORM	Second person wants a <pizza_type>veggie supreme</pizza_type> <pizza_crust>thin crust</pizza_crust>
+INFORM	also <pizza_size>small</pizza_size>
+INFORM	Person three just wants a <pizza_type>pizza</pizza_type> with <pizza_topping>cheddar cheese</pizza_topping> on <pizza_crust>regular crust</pizza_crust>
+INFORM	these are <pizza_size>all gonna be small</pizza_size>
+REQUEST	Person four doesn't like cheese, vegetables, or meat, <info_type>what do you recommend for them</info_type>?
+INFORM	Okay, how about a <pizza_type>vegan</pizza_type> <pizza_topping>no veggies</pizza_topping> but with <pizza_topping>pineapple</pizza_topping>, can we do that?
+INFORM	Awesome, the fifth person and the sixth person both want <pizza_type>4 cheese</pizza_type> but person 5 wants it with <pizza_topping>no mozzarella</pizza_topping> and person 6 <pizza_topping>doesn't want swiss</pizza_topping>
+INFORM	The last person wants <pizza_type>veggie supreme</pizza_type> but with <pizza_topping>ham</pizza_topping>
+INFORM	Also we'll get <side_order>3 bread sticks</side_order>, <side_order>3 cheese sticks</side_order>, and <side_order>3 colas</side_order>
+CONFIRM	that should be it
+CONFIRM	Yes
+INFORM	ok I'm back they are want <pizza_crust>regular</pizza_crust>, and we need to add <side_order>one green salad</side_order>
+INFORM	<delivery_method>delivery</delivery_method>
+INFORM	to <address>123 elm st</address>
+THANK	awesome thanks!
+INFORM	Can I get a side <side_order>green salad with no tomatoes</side_order>, <pizza_quantity>4</pizza_quantity> <pizza_size>medium</pizza_size> <pizza_type>cheese</pizza_type> pizzas with <pizza_crust>regular crust</pizza_crust>, and <side_order>3 ginger ale</side_order>
+INFORM	<delivery_method>Delivery</delivery_method> pls
+INFORM	Address: <address>123 MyAddress</address>
+INFORM	Card: <card_number>12345</card_number> Type: <card_type>MyCard</card_type>
+INFORM	it's gabrielle wait <order_name>jp doe</order_name>
+INFORM	can i order a <pizza_size>large</pizza_size> <pizza_type>meat lovers</pizza_type>, please
+INFORM	let's go with <delivery_method>delivery</delivery_method>
+INFORM	let's go with <delivery_method>pick up</delivery_method>, please
+HELLO	hi,
+HELLO	hello,
+INFORM	<delivery_method>take out</delivery_method> would be great, please
+INFORM	i'd rather have a <pizza_type>pepperoni</pizza_type> on <pizza_crust>thin crust</pizza_crust> instead, please
+INFORM	please make it <delivery_method>take-out</delivery_method>
+HELLO	hello,
+THANK	thanks
+THANK	amazing thanks
+INFORM	it's <phone_number>206-555-1234</phone_number>
+HELLO	hey, how's it going?
+INFORM	hi, i'll have a <pizza_type>4 cheese</pizza_type>, please
+INFORM	it's asli wait <order_name>danko brown</order_name>
+INFORM	can i <delivery_method>pick up</delivery_method> my pizza order ?
+HELLO	hi,
+INFORM	i'd like a <pizza_size>12 inch</pizza_size> <pizza_type>hawaiian</pizza_type> on <pizza_crust>regular</pizza_crust>?
+REORDER	may i reorder my favorite pizza, please
+INFORM	<delivery_method>take out</delivery_method>, please
+REORDER	may i order my most frequent again, please
+REORDER	please place another order for my favorite
+INFORM	it's danko wait <order_name>danko black</order_name>
+HELLO	hey, how's it going? i'd like to place an order
+INFORM	yes, <delivery_method>take out</delivery_method> sounds good
+REORDER	could i order my pizza order again, please
+INFORM	yep, how about <delivery_method>take-out</delivery_method>, please
+REORDER	may i reorder my usual pizza order
+INFORM	<delivery_method>delivery</delivery_method>, please
+DENY	nope
+HELLO	hello,
+INFORM	yeah, please make it <delivery_method>pick up</delivery_method>, please
+INFORM	<delivery_method>take-out</delivery_method>
+INFORM	oh, and can you, please make it <delivery_method>take-out</delivery_method>
+INFORM	i want to order a <pizza_type>hawaiian</pizza_type> on <pizza_crust>gluten free crust</pizza_crust>. make it <pizza_size>small</pizza_size>
+INFORM	may i get a uhm... <pizza_type>pepperoni</pizza_type> on <pizza_crust>regular</pizza_crust>, please
+CHECKORDER	how long until my pizza order is delivered?
+INFORM	hey, how's it going? i'd like a <pizza_size>medium</pizza_size> <pizza_type>4 cheese</pizza_type>
+INFORM	hello, i'll have a <pizza_type>hawaiian</pizza_type>
+INFORM	i'd like to order a <pizza_type>hawaiian</pizza_type> on <pizza_crust>gluten free</pizza_crust>. make it <pizza_size>14 inch</pizza_size>, please
+INFORM	<phone_number>425-555-1712</phone_number>
+REORDER	i'd like to place another order for my usual pizza order, please
+INFORM	can i get a <pizza_size>medium</pizza_size> <pizza_type>4 cheese</pizza_type>, please ?
+CORRECT	actually i'll get a different <info_type>crust type</info_type>
+REORDER	could i place another order for my preferred pizza order
+REORDER	can i get my previous order again
+INFORM	yeah, let's go with <delivery_method>take out</delivery_method>
+INFORM	<delivery_method>delivery</delivery_method> sounds good
+CORRECT	i'd like a different <info_type>type of pizza</info_type>, actually
+REORDER	may i reorder my preferred pizza
+THANK	awesome thanks
+INFORM	yeah, <delivery_method>delivery</deliver_method> will be great, please
+INFORM	yes, <delivery_method>pick up</delivery_method> sounds good
+INFORM	put it under <order_name>khushboo</order_name>
+REORDER	could i place another order for my order again, please
+INFORM	may i get a uhh... <pizza_type>pepperoni</pizza_type>. make it <pizza_size>10 inch</pizza_size>, please
+CHECKORDER	when will my pizza order arrive here?
+INFORM	i need a uhh... <pizza_type>4 cheese</pizza_type>, please
+INFORM	<delivery_method>take-out</delivery_method>, please
+INFORM	<delivery_method>take out</delivery_method> from your maple leaf location, please
+HELLO	hey, how's it going?
+INFORM	yes, make it <delivery_method>take-out</delivery_method>, please
+CHECKORDER	where's the pizza i ordered?
+REORDER	please order my most frequent pizza order
+CHECKORDER	is my order ready?
+INFORM	<delivery_method>pick up</delivery_method>
+INFORM	it's <order_name>eva</order_name>
+INFORM	<delivery_method>take out</delivery_method> will be great
+REORDER	place an order for my preferred pizza order
+INFORM	let's go with <delivery_method>take-out</delivery_method>, please
+REORDER	please place an order for my most recent order
+REORDER	can i place an order for my previous order, please
+THANK	awesome thanks
+REORDER	may i place an order for my most common order again
+THANK	amazing thanks
+INFORM	hello, can i get a <pizza_type>no dairy no meat specia</pizza_type>l ?
+INFORM	can i order a <pizza_size>large</pizza_size> <pizza_type>pepperoni</pizza_type> on <pizza_crust>thin crust</pizza_crust>, please
+INFORM	<delivery_method>pick up</delivery_method> sounds good
+HELLO	hey, how's it going?
+INFORM	it's <order_name>michael</order_name>
+REORDER	please order my previous
+THANK	thanks
+INFORM	hi, may i get a <pizza_size>large</pizza_size> <pizza_type>4 cheese</pizza_type>
+INFORM	it is <phone_number>206-555-7812</phone_number>
+THANK	thanks
+THANK	awesome thanks
+HELLO	hi,
+THANK	amazing thanks
+REORDER	can i get my usual order again
+INFORM	hey, how's it going? i'll have a <pizza_type>supreme</pizza_type>, please
+REORDER	please order my previous pizza
+CHECKORDER	when do you think my pizza order will be ready?
+INFORM	let's go with <order_name>steve</order_name>, please
+HELLO	hello,
+CHECKORDER	can you, please look up my order?
+INFORM	<delivery_method>delivery</delivery_method> would be great, please
+HELLO	hey, how's it going? i'd like to place an order
+REORDER	i'd like to order my previous pizza order again
+INFORM	hi, i'd like a <delivery_method>pick up</delivery_method> order
+HELLO	Hello.
+INFORM	Um, hi. I just want to get a, a <pizza_size>large</pizza_size> pizza please.
+INFORM	Uh, no, I want a <pizza_type>Hawaiian</pizza_type> pizza, please.
+CORRECT	Well, I asked for Hawaiian. Hawaiian comes with <pizza_topping>pineapple and ham</pizza_topping>.
+CONFIRM	Mhm.
+DENY	No, I'll just, just the pizza, please.
+INFORM	I'll <delivery_method>pick it up</delivery_method>.
+INFORM	I'll <payment_type>pay when I pick up<payment_type>.
+CONFIRM	Okay.
+INFORM	<order_name>Jennifer</order_name>.
+GOODBYE	Okay, thanks. I'll, I'll see you then.
+INFORM	Hey um can I get a <pizza_size>large</pizza_size> pizza, <pizza_topping>no cheese</pizza_topping>, <pizza_topping>diced tomatoes</pizza_topping>, and <pizza_topping>spinach</pizza_topping>?
+DENY	Oh um. no
+REQUEST	Yeah, yeah, um can I get a...d-do you have the <side_order>2-liter bottles</side_order>?
+INFORM	Okay okay um...let me do a <side_order>medium coke</side_order>
+CORRECT	<pizza_topping>Spinach</pizza_topping>
+INFORM	You know what if you have <pizza_topping>kale</pizza_topping> we can do both
+CONFIRM	Amazing, perfect
+INFORM	Perfect, let me give you my <payment_type>card</payment_type>...um that.s gonna be -- the number is um <card_number>1024</card_number>
+INFORM	Um and the <card_CVV>code is 782</card_CVV>...the expiration is <card_expiration>12/89</card_expiration>
+INFORM	<order_name>John Doe</order_name>
+CONFIRM	That is it, thank you
+INFORM	I.ll come in for <delivery_method>pickup</delivery_method>
+THANK	Okay great, thank you
+GOODBYE	You too.
+HELLO	hello i’d like to order a pizza please
+INFORM	forrr <delivery_method>pickup</delivery_method> please
+INFORM	i’d like a <pizza_size>large</pizza_size> <pizza_topping>pepperoni</pizza_topping> pizza. <pizza_topping>Half with pineapple</pizza_topping> and <pizza_topping>half with no pineapple</pizza_topping>
+CONFIRM	nooo i think that’s it.
+GOODBYE	okay great. Thank you!
+HELLO	Hi, I'd like to order pizza today.
+INFORM	Can I have the <pizza_type>Hawaiian</pizza_type> pizza please?
+REQUEST	Um, <info_type>how many people does the large serve</info_type>?
+REQUEST	Okay, that's perfect. Thank you. And how much does that one <info_type>cost</info_type>?
+INFORM	Okay, can I get the <pizza_crust>regular</pizza_crust> please?
+DENY	Um, no, thank you.
+INFORM	Um I think the <side_order>breadsticks</side_order>
+INFORM	Um can I have it <delivery_method>delivered</delivery_method>, please?
+THANK	Okay, thank you.
+INFORM	I can <payment_type>pay over the phone</payment_type>.
+INFORM	Okay, the card type is <card_type>mycard</card_type> and the name is <order_name>Hannah Smith</order_name>.
+INFORM	The card number is <card_number>one-two-three-four-five</card_number> and the expiration is <card_expiration>end of the year</card_expiration>.
+INFORM	Yes. <order_name>Hannah Smith</order_name>.
+INFORM	Um <address>123 Elm Street</address>.
+THANK	All right. Thank you.
+GOODBYE	You too.
+INFORM	hi uh i was coming to <delivery_method>pick up</delivery_method> an order of <pizza_quantity>one</pizza_quantity> <pizza_topping>pineapple</pizza_topping> and <pizza_topping>ham</pizza_topping> pizza
+INFORM	could i get <pizza_topping>green peppers</pizza_topping> on that as well
+CONFIRM	uh yes
+CONFIRM	yeah thats right
+INFORM	actually i was hoping to get it <delivery_method>del[ivered]</delivery_method>
+CONFIRM	that'd be great
+INFORM	yeah that'll be <address>one two three four five at [pause] uh [inaudible] uh seattle washington</address>
+CONFIRM	yeah that's it
+THANK	sounds perfect thanks
+INFORM	Hi, I just wanted to see if I can place an order for <delivery_method>delivery</delivery_method> (Clears throat)
+INFORM	Um, I'm looking for around <order_time>5 o'clock</order_time>.
+INFORM	Yeah for sure, so I'm right next to Greenlake, I'm at <address>555, um, Green Lake Avenue (clears throat) and the zip code is 98103</address>
+CORRECT	Oh it's ah, <info_type>98103 and it's actually Green *lake* avenue</info_type>.
+CORRECT	Ah 9.. <info_type>98103</info_type>
+REQUEST	Um okay, so I have about 6 people and I'm wondering <info_type>how many pizzas<info_type> I should get in order to feed six people. They're all adults, ah, nobody has any dietary restrictions or anything like that but I just want to make sure I order enough food
+INFORM	Okay.  Ooookay.  I think... what I'll do I'll probably get <pizza_quantity>2</pizza_quantity> <pizza_size>larges</pizza_size> then just to make suuure and then if anybody wants extra there'll be enough. Okay so I will get.... sorry I'm pulling up the menu. (Pause) Um... (clears throat) Okay can I get one of the <pizza_size>large</pizza_size> um <pizza_type>Thai chicken pizzas</pizza_type>... ah, and can I get no <pizza_topping>cilantro</pizza_topping> on that?
+CONFIRM	Mm-hm
+INFORM	And then the second one is gonna be um the complete <pizza_type>combo</pizza_type>
+INFORM	Um.. actually I'm going to do a <pizza_size>large</pizza_size> for that one. So it's gonna be...
+CONFIRM	Mm-hm
+CONFIRM	Ahhh.. that's gonna be it!
+INFORM	Okay. All right so I'm going to be paying with a <payment_type><card_type>Visa</card_type><payment_type>.
+INFORM	Um, my card number is <card_number>1 2 3 4 5</card_number>. (Clear throat)
+INFORM	And expiration is ah <card_expiration>0 1 2 0</card_expiration>
+REQUEST	And then the... do you need the <info_type>CV</info_type> or that.. that security code on the back?
+CONFIRM	Okay
+HELLO	Ah...I need to order a pizza.
+INFORM	<delivery_method>Delivery</delivery_method> please.
+INFORM	Address is <address>1410 NE Campus Parkway Seattle, WA 98195</address>.
+INFORM	My phone number is <phone_number>206-123-4567</phone_number>
+INFORM	My name is <order_name>John</order_name>.
+INFORM	I like to order 4 cheese pizza.
+INFORM	I need <pizza_topping>black olives</pizza_topping>, <pizza_topping>mushrooms,</pizza_topping> and <pizza_topping>green peppers</pizza_topping>.
+DENY	Nope, that’s it.
+INFORM	<pizza_crust>Regular</pizza_crust>.
+INFORM	<pizza_size>Medium</pizza_size>.
+INFORM	<side_order>One Caesar salad</side_order>.
+INFORM	<side_order>One Cola</side_order>.
+CONFIRM	Yeah. That’s correct.
+CONFIRM	Oh that’s good.
+GOODBYE	Bye.
+REQUEST	Um, I want to order a pizza here, but I'm honestly it's my first time because I'm not from the US and it's going to be my first time going to a pizza restaurant. So I'm not having a good option right now coo, <info_type>do you have any suggestions at this point<info_type>?
+CONFIRM	For me and some friends. Yes.
+CONFIRM	Okay, I'll do that. Thank you.
+DENY	Um, no, I don't think so.
+CONFIRM	I think they love bacon. So I guess I would say they can be a good one.
+CONFIRM	Oh, I see. Okay, that's, that's good. I think I'll go with that one.
+REQUEST	Um, what, what would you recommend if you just if you if you're ordering a <info_type>pizza</info_type>, I don't, I don't know which one.
+INFORM	Umm. Uhhh. Uh could I just get a umm... a a <pizza_type>small four cheese pizza</pizza_type>?
+INFORM	Uhhh uh yeah, uh a <side_order>cola</side_order>. Umm.
+CONFIRM	Yeeah, um. That should be it.
+INFORM	Umm. Uh, <delivery_method>delivered</delivery_method>, delivered, yeah. Delivered.
+INFORM	Is uh, is <order_name>Jane Doe</order_name>.
+CONFIRM	Oh great. Great. Okay -
+HELLO	Hi, I’ll like to order a pizza please.
+INFORM	Uhh one <pizza_size>large</pizza_size> pizza, uh <pizza_topping>one half with mushrooms</pizza_topping> and <pizza_topping>one half with chicken</pizza_topping>.
+INFORM	Uhh <pizza_topping>margarita sauce</pizza_topping>.
+CONFIRM	Um no, I am – uhh that is, that is all.
+INFORM	Uhh <delivery_method>delivery</delivery_method>.
