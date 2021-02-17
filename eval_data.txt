@@ -1,0 +1,201 @@
+intent	utterance
+CONFIRM	that would be great yes,
+INFORM	let's go with <ORDER_TYPE>pick up</ORDER_TYPE>
+HELLO	hey, how's it going?
+INFORM	i'd like to order a <PIZZA_TYPE>pepperoni</PIZZA_TYPE>, please
+INFORM	hello, i'll have a <SIZE>small</SIZE> <PIZZA_TYPE>pepperoni</PIZZA_TYPE>, please
+THANK	awesome thanks
+INFORM	i'll get a <SIZE>large</SIZE> <PIZZA_TYPE>hawaiian</PIZZA_TYPE>, please
+INFORM	let's go with <ORDER_TYPE>pick up</ORDER_TYPE>, please
+INFORM	i'll get a uhh <SIZE>10 inch</SIZE> <PIZZA_TYPE>hawaiian</PIZZA_TYPE>
+INFORM	can i order a <SIZE>12 inch</SIZE> <PIZZA_TYPE>veggie</PIZZA_TYPE>, please
+THANK	great thank you
+INFORM	hello, can i get a <PIZZA_TYPE>4 cheeses</PIZZA_TYPE> ?
+INFORM	give me a <PIZZA_TYPE>hawaiian</PIZZA_TYPE>, please. make it <SIZE>medium</SIZE>
+INFORM	yes, <ORDER_TYPE>take out</ORDER_TYPE> sounds good
+INFORM	it is <PHONENUMBER>519-555-5567</PHONENUMBER>
+INFORM	please make it <ORDER_TYPE>pick up</ORDER_TYPE>
+INFORM	i'd like to order a <PIZZA_TYPE>pepperoni</PIZZA_TYPE>. make it <SIZE>14 inch</SIZE>
+INFORM	let's go with <ORDER_TYPE>take-out</ORDER_TYPE> from your <PICKUPADDRESS>fall city store</PICKUPADDRESS>, please
+INFORM	i'll order a uhm <PIZZA_TYPE>4 cheeses</PIZZA_TYPE> on <CRUST>regular</CRUST>. make it <SIZE>12 inch</SIZE>
+INFORM	use <NAME>rahul</NAME>
+REORDER	could i reorder my most recent order, please
+REORDER	may i reorder my most recent order, please
+REORDER	please place another order for my most frequent pizza
+REORDER	can i get my previous pizza again
+THANK	awesome thank you
+REQUEST	can you tell me <STATUS>where's my pizza order</STATUS>?
+INFORM	i need a <SIZE>12 inch</SIZE> <PIZZA_TYPE>vegan</PIZZA_TYPE>, please
+INFORM	<ORDER_TYPE>delivery</ORDER_TYPE> would be great, please
+HELLO	hello,
+CONFIRM	yeah,, please
+THANK	terrific thank you
+INFORM	yeah, how about <ORDER_TYPE>take out</ORDER_TYPE>
+INFORM	let's go with <ORDER_TYPE>take-out</ORDER_TYPE>
+INFORM	it's <PHONENUMBER>519-555-0021</PHONENUMBER>
+INFORM	i'd like a uh... <SIZE>medium</SIZE> <PIZZA_TYPE>veggie supreme</PIZZA_TYPE>, please
+INFORM	i'd like to get a <PIZZA_TYPE>pepperoni</PIZZA_TYPE> on <CRUST>thin crust</CRUST>
+INFORM	yes, how about <ORDER_TYPE>delivery</ORDER_TYPE>
+INFORM	<PHONENUMBER>206-555-1230</PHONENUMBER>
+REQUEST	<STATUS>how long until my pizza order arrives</STATUS>?
+INFORM	actually, can you, please make it a <SIZE>12 inch</SIZE>
+HELLO	hello,
+THANK	awesome thanks
+REORDER	i'd like to place an order for my favorite pizza order
+DENY	no, i'd like to change something
+INFORM	i need a <SIZE>12 inch</SIZE> <PIZZA_TYPE>4 cheeses</PIZZA_TYPE>, please
+REORDER	could i order my previous pizza order again
+DENY	nope
+REORDER	place another order for my most recent pizza again
+REORDER	please place an order for my most frequent order
+INFORM	hey, how's it going? i'll have a <PIZZA_TYPE>4 cheese</PIZZA_TYPE>, please
+INFORM	<ORDER_TYPE>delivery</ORDER_TYPE>, please
+REORDER	i'd like to get my most frequent again, please
+INFORM	it is <PHONENUMBER>519-555-1927</PHONENUMBER>
+REORDER	reorder my previous pizza again
+REORDER	may i reorder my favorite order again, please
+THANK	thanks
+CONFIRM	, please yeah,
+DENY	no
+REORDER	may i place another order for my preferred pizza again
+INFORM	hi, may i get a <SIZE>medium</SIZE> <PIZZA_TYPE>meat lovers</PIZZA_TYPE>, please
+INFORM	i'll order a <PIZZA_TYPE>pepperoni</PIZZA_TYPE> on <CRUST>regular crust</CRUST>. make it <SIZE>large</SIZE>, please
+HELLO	hey, how's it going?
+REORDER	may i order my previous pizza, please
+CONFIRM	absolutely yeah,
+INFORM	<ORDER_TYPE>take-out</ORDER_TYPE> will be great, please
+REORDER	may i reorder my most frequent order
+THANK	great thank you
+INFORM	yep, let's go with <ORDER_TYPE>delivery</ORDER_TYPE>
+INFORM	hello, can i get a <PIZZA_TYPE>4 cheese</PIZZA_TYPE> ?
+INFORM	i'd like to get a <SIZE>14 inch</SIZE> <PIZZA_TYPE>meat lovers</PIZZA_TYPE>
+REORDER	reorder my most frequent pizza order again
+INFORM	yep, let's go with <ORDER_TYPE>pick up</ORDER_TYPE>, please
+INFORM	make it <ORDER_TYPE>take out</ORDER_TYPE>, please
+REQUEST	<STATUS>how long until i get my pizza order</STATUS> ?
+INFORM	can i get a uhh... <SIZE>large</SIZE> <TOPPING>no dairy</TOPPING> <TOPPING>no meat</TOPPING> special, please
+CONFIRM	yep, perfect
+INFORM	yeah, let's go with <ORDER_TYPE>take out</ORDER_TYPE>, please
+DENY	nope, i'd like to change something
+CONFIRM	yes, perfect
+REORDER	i'd like to place another order for my previous pizza again, please
+INFORM	hello, can i get a <PIZZA_TYPE>veggie supreme</PIZZA_TYPE>, please ?
+CONFIRM	that would be great yep,
+INFORM	it's <NAME>david</NAME>
+HELLO	hey, how's it going?
+REORDER	could i reorder my most recent order, please
+REORDER	reorder my favorite pizza
+INFORM	<ORDER_TYPE>take-out</ORDER_TYPE> would be great, please
+INFORM	<PHONENUMBER>206-555-5677</PHONENUMBER>
+INFORM	yes, <ORDER_TYPE>take-out</ORDER_TYPE> sounds good
+REORDER	reorder my most recent order
+REQUEST	<STATUS>how long</STATUS> until my pizza order is ready?
+INFORM	hey, how's it going? may i get a <SIZE>medium</SIZE> <PIZZA_TYPE>hawaiian</PIZZA_TYPE>, please
+CONFIRM	that would be great yes,
+INFORM	yes, <ORDER_TYPE>delivery</ORDER_TYPE> would be great, please
+INFORM	it's <NAME>eva</NAME>, please
+INFORM	yep, <ORDER_TYPE>take-out</ORDER_TYPE>, please
+INFORM	can i get a different kind of <CRUST>crust</CRUST>
+INFORM	i'd like a <PIZZA_TYPE>4 cheese</PIZZA_TYPE> on <CRUST>thin</CRUST>, please. make it <SIZE>medium</SIZE>
+INFORM	can i get a <PIZZA_TYPE>veggie supreme</PIZZA_TYPE> on <CRUST>thin crust</CRUST>, please. make it <SIZE>14 inch</SIZE>
+HELLO	hi,
+INFORM	i'll make the third pizza a <SIZE>large</SIZE> <PIZZA_TYPE>meat lovers</PIZZA_TYPE>, please
+INFORM	may i get <COUNT>three</COUNT> <SIZE>14 inch</SIZE> pizzas
+INFORM	hi, this is <NAME>ali</NAME> here can you change my order to <ORDER_TYPE>take out</ORDER_TYPE>
+INFORM	hi, this is is <NAME>lissa</NAME> can i change my order to <ORDER_TYPE>take out</ORDER_TYPE>, please
+INFORM	give me <COUNT>two</COUNT> pizzas on <CRUST>regular crust</CRUST>. make them <SIZE>large</SIZE>, please
+HELLO	hello,
+INFORM	hey, how's it going? my name is is <NAME>soumya</NAME> can you, please change my order to <ORDER_TYPE>delivery</ORDER_TYPE>
+INFORM	let's make the second one a <PIZZA_TYPE>veggie supreme</PIZZA_TYPE>. a <SIZE>small</SIZE>
+INFORM	add <TOPPING>red onion</TOPPING> to the other half of the second one
+REORDER	could i order my preferred order also i'd like to remove olives from it
+INFORM	may i order my most frequent order also i'd like to get a uh <SIZE>14 inch</SIZE> <PIZZA_TYPE>hawaiian</PIZZA_TYPE>
+REORDER	order my pizza order also can i add <TOPPING>green olives</TOPPING> to it
+INFORM	i'll have <TOPPING>no red onion</TOPPING> on the second half of the first one
+INFORM	can i get a <PIZZA_TYPE>supreme</PIZZA_TYPE> on <CRUST>gluten free crust</CRUST> for the first one. let's go with a <SIZE>10 inch</SIZE>
+INFORM	i'll take a uhm <PIZZA_TYPE>veggie supreme</PIZZA_TYPE> for the fourth pizza, please. and let's do <SIZE>12 inch</SIZE>
+REORDER	please place another order for my pizza order also i'd like to order a <PIZZA_TYPE>hawaiian</PIZZA_TYPE>. make it <SIZE>12 inch</SIZE>
+INFORM	i'd like a <ORDER_TYPE>take out</ORDER_TYPE> order
+INFORM	hey, how's it going? i'll change my order to <ORDER_TYPE>take-out</ORDER_TYPE>, please
+HELLO	hello,
+INFORM	i'd like to get a <PIZZA_TYPE>4 cheeses</PIZZA_TYPE> on <CRUST>deep dish</CRUST> for the first pizza
+INFORM	i'll take <COUNT>two</COUNT> pizzas on <CRUST>thin crust</CRUST>
+INFORM	hello, this is <NAME>rahul</NAME> here can i, please change my order to <ORDER_TYPE>pick up</ORDER_TYPE>
+REORDER	can i reorder my most frequent order again, please also may i order a <SIZE>medium</SIZE> <PIZZA_TYPE>4 cheese</PIZZA_TYPE>
+INFORM	i want a <SIZE>large</SIZE> <PIZZA_TYPE>5 cheese</PIZZA_TYPE> on <CRUST>gluten free</CRUST> for the third pizza, please
+INFORM	hello, i'm is <NAME>danko</NAME> can you change my order to <ORDER_TYPE>take-out</ORDER_TYPE>, please
+INFORM	hello, i uhm... have an order for two 14 inch pizzas on crust, a 4 cheeses and a 4 cheese can i uh... change my order to <ORDER_TYPE>take out</ORDER_TYPE>
+INFORM	i'd like to place an order for <ORDER_TYPE>pick up</ORDER_TYPE>
+INFORM	please add <PIZZA_TOPPING>green olives</PIZZA_TOPPING> to the right half of the third one
+INFORM	i'll order uh... <COUNT>two</COUNT> pizzas. i'll go with <SIZE>medium</SIZE> for all of them, please
+INFORM	may i get <COUNT>two</COUNT> pizzas on <CRUST>deep dish</CRUST>. i'd like a <PIZZA_TYPE>meat lovers</PIZZA_TYPE> for the first pizza. and let's do <SIZE>12 inch</SIZE>, please let's make the second one a uh <PIZZA_TYPE>meat lovers</PIZZA_TYPE>, please. make it <SIZE>large</SIZE>. how much is that gonna cost?
+INFORM	can i order uhm <COUNT>five</COUNT> pizzas. all of them <SIZE>10 inch</SIZE>, please
+INFORM	may i add <TOPPING>mushrooms</TOPPING> to the first half of the third one
+INFORM	<TOPPING>remove olives</TOPPING> from the other half of the first one
+INFORM	hey, how's it going? this is <NAME>logan</NAME> here can you, please switch my order to <ORDER_TYPE>delivery</ORDER_TYPE>
+INFORM	can i order <COUNT>three</COUNT> pizzas on <CRUST>regular</CRUST>, please. i'll go with <SIZE>medium</SIZE> for all of them
+INFORM	hello, this is <NAME>lissa</NAME> here can you change my order to <ORDER_TYPE>delivery</ORDER_TYPE>
+INFORM	i'll order <COUNT>two</COUNT> pizzas. all of them <SIZE>medium</SIZE>
+INFORM	i want to <TOPPING>remove extra ham</TOPPING> from the left half of the first one
+INFORM	remove double the amount of pepperoni from the third pizza
+INFORM	i'd like to place an order for <ORDER_TYPE>take out</ORDER_TYPE>
+INFORM	add <TOPPING>provolone</TOPPING> to the other half of the second pizza
+INFORM	i'll make the second one a uhh <PIZZA_TYPE>veggie supreme</PIZZA_TYPE>. a <SIZE>12 inch</SIZE>
+REORDER	please place an order for my most common also i'd like to get a uhm 14 inch pepperoni on thin crust, please
+INFORM	let's make the second one a <SIZE>12 inch</SIZE> <PIZZA_TYPE>hawaiian</PIZZA_TYPE> on <SIZE>regular</SIZE>, please
+INFORM	the second pizza i'll do a <PIZZA_TYPE>vegan</PIZZA_TYPE> on <CRUST>regular</CRUST>. a <SIZE>small</SIZE>
+INFORM	hi, i'll i'll switch my order to <ORDER_TYPE>delivery</ORDER_TYPE>, please
+INFORM	i need <COUNT>three</COUNT> <SIZE>small</SIZE> pizzas on <CRUST>thin crust</CRUST>
+INFORM	i'd like to get a <PIZZA_TYPE>vegetarian</PIZZA_TYPE> for the second pizza. a <SIZE>small</SIZE>
+INFORM	can i <TOPPING>remove green peppers</TOPPING> from the left half of the first one
+INFORM	i need <COUNT>three</COUNT> pizzas on <CRUST>regular crust</CRUST>. i'll go with <SIZE>14 inch</SIZE> for all of them
+INFORM	hi, this is <NAME>daniel</NAME> here can you change my order to <ORDER_TYPE>pick up</ORDER_TYPE>
+REORDER	reorder my favorite pizza order also i'll have a uhm... small veggie supreme, please
+INFORM	for the third pizza i'd like a uh <PIZZA_TYPE>hawaiian<PIZZA_TYPE> on <CRUST>gluten free crust</CRUST>, please. a <SIZE>medium</SIZE>
+REORDER	could i place another order for my most common also give me a 14 inch hawaiian on gluten free crust, please
+INFORM	i want to <TOPPING>remove extra ham</TOPPING> from the second pizza
+INFORM	hi, can i change my order to <ORDER_TYPE>delivery</ORDER_TYPE>, please
+REORDER	could i place an order for my most frequent order also please add bacon to it
+INFORM	may i order a <PIZZA_TYPE>hawaiian</PIZZA_TYPE> on <CRUST>thin</CRUST> for the second one, please. and let's do <SIZE>small</SIZE>
+INFORM	can i <TOPPING>remove italian sausage</TOPPING> from the one half of the third pizza
+REORDER	could i get my most common also can i get no red onions on it
+INFORM	can i get a uhm... <PIZZA_TYPE>vegan</PIZZA_TYPE> for the second one
+REORDER	i'd like to place another order for my preferred pizza order also also get no mozzarella on one half
+REORDER	may i place an order for my favorite also i want to remove onions from it
+INFORM	can i order a uhh <PIZZA_TYPE>vegan</PIZZA_TYPE> for the first one, please
+INFORM	hey, how's it going? this is is <NAME>soumya</NAME> can you change my order to <ORDER_TYPE>take out</ORDER_TYPE>
+INFORM	i'd like to <TOPPING>remove extra pepperoni</TOPPING> from the second half of the second pizza
+REORDER	reorder my preferred also please add pineapple to the right half
+REORDER	can i reorder my favorite pizza order again also i'll have a large vegan
+INFORM	hi, can you, please switch my order to <ORDER_TYPE>take-out</ORDER_TYPE>
+INFORM	hi, can i switch my order to <ORDER_TYPE>take out</ORDER_TYPE>, please
+INFORM	hey, how's it going? my phone number is <PHONENUMBER>206-555-1230</PHONENUMBER> i'd like to change my order to <ORDER_TYPE>take-out</ORDER_TYPE>
+INFORM	i want to order a uh... <SIZE>10 inch</SIZE> <PIZZA_TYPE>pepperoni</PIZZA_TYPE> on <CRUST>gluten free</CRUST> for the second one, please
+REORDER	please order my usual pizza also i'd like to order a uh... medium hawaiian
+REORDER	may i order my favorite pizza order, please also remove sliced ham from the first half
+REORDER	could i place another order for my most frequent also please add double the amount of pepperoni to the first half
+HELLO	hello,
+INFORM	i want to order <COUNT>two</COUNT> pizzas, please
+REORDER	please place an order for my favorite order also please remove canadian bacon from it
+INFORM	hey, how's it going? my name is is <NAME>lissa</NAME> can you change my order to <ORDER_TYPE>take out</ORDER_TYPE>
+INFORM	hello, i'll i'll switch my order to <ORDER_TYPE>pick up</ORDER_TYPE>
+REORDER	get my usual pizza again also may i get a meat lovers. make it medium, please
+INFORM	may i order a uhh... <PIZZA_TYPE>vegan</PIZZA_TYPE> for the third one. let's go with a <SIZE>small</SIZE>
+INFORM	hi, i'll switch my order to <ORDER_TYPE>take out</ORDER_TYPE>
+HELLO	hi,
+INFORM	i'll take uh... <COUNT>five</COUNT> <SIZE>12 inch</SIZE> pizzas on <CRUST>thin crust</CRUST>, please
+INFORM	the second pizza i'll do a uh... <PIZZA_TYPE>hawaiian</PIZZA_TYPE> on <CRUST>thin</CRUST>. a <SIZE>large</SIZE>
+INFORM	may i get a uhm all <TOPPING>cheese</TOPPING> on <CRUST>regular crust</CRUST> for the third one. let's go with a <SIZE>12 inch</SIZE>
+INFORM	for the second one i'd like a uhm <PIZZA_TYPE>meat lovers</PIZZA_TYPE> on <CRUST>gluten free crust</CRUST>, please. let's go with a <SIZE>10 inch</SIZE>
+REORDER	i'd like to place an order for my favorite again also i want to order a uh pepperoni. make it medium, please
+REORDER	i'd like to place an order for my favorite pizza again also give me a pepperoni on gluten free
+REORDER	order my preferred order again also i need to remove sausage from one half
+INFORM	i need uh... <COUNT>two<COUNT> pizzas. make them <SIZE>14 inch</SIZE>, please
+INFORM	let's make the third one a uhh <TOPPING>pepperoni</TOPPING>. make it <SIZE>10 inch</SIZE>, please
+INFORM	i want to order <COUNT>four</COUNT> pizzas, please. make them <SIZE>large</SIZE>
+INFORM	i want to add <TOPPING>bacon</TOPPING> to the other half of the first one
+INFORM	i'll make the third one a uhm... <SIZE>medium</SIZE> <TOPPING>pepperoni</TOPPING> on <CRUST>thin crust</CRUST>
+INFORM	hello, may i place an order for <ORDER_TYPE>take-out</ORDER_TYPE>, please
+INFORM	i want to order <COUNT>two</COUNT> pizzas on <CRUST>thin</CRUST>. make them <SIZE>14 inch</SIZE>
+INFORM	i'll make the first pizza a <PIZZA_TYPE>hawaiian</PIZZA_TYPE>. make it <SIZE>12 inch</SIZE>, please
+INFORM	may i get uh <COUNT>two</COUNT> <SIZE>large</SIZE> pizzas, please
