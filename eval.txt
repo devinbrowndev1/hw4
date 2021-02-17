@@ -1,0 +1,403 @@
+Type the sentence to be parsed by the rule-based system or type quit to exit
+(None, 'intent\tutterance')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+(None, 'CONFIRM\tthat would be great yes,')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\tlet's go with <ORDER_TYPE><delivery_method><pickup_location>pick up</pickup_location></delivery_method></ORDER_TYPE>")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('HELLO', "HELLO\they, how's it going?")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\ti'd like to order a <PIZZA_TYPE><pizza_type>pepperoni</pizza_type></PIZZA_TYPE>, please")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\thello, i'll have a <SIZE><pizza_size>small</pizza_size></SIZE> <PIZZA_TYPE><pizza_type>pepperoni</pizza_type></PIZZA_TYPE>, please")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+(None, 'THANK\tawesome thanks')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\ti'll get a <SIZE><pizza_size>large</pizza_size></SIZE> <PIZZA_TYPE><pizza_type>hawaiian</pizza_type></PIZZA_TYPE>, please")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\tlet's go with <ORDER_TYPE><delivery_method><pickup_location>pick up</pickup_location></delivery_method></ORDER_TYPE>, please")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\ti'll get a uhh <SIZE><pizza_size>10 inch</pizza_size></SIZE> <PIZZA_TYPE><pizza_type>hawaiian</pizza_type></PIZZA_TYPE>")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\tcan i order a <SIZE><pizza_size>12 inch</pizza_size></SIZE> <PIZZA_TYPE>veggie</PIZZA_TYPE>, please')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('HELLO', 'THANK\tgreat thank you')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\thello, can i get a <PIZZA_TYPE><pizza_type>4 cheese</pizza_type>s</PIZZA_TYPE> ?')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\tgive me a <PIZZA_TYPE><pizza_type>hawaiian</pizza_type></PIZZA_TYPE>, please. make it <SIZE><pizza_size>medium</pizza_size></SIZE>')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\tyes, <ORDER_TYPE><delivery_method><pickup_location>take out</pickup_location></delivery_method></ORDER_TYPE> sounds good')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\tit is <PHONENUMBER><phone>519-555-5567</phone></PHONENUMBER>')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\tplease make it <ORDER_TYPE><delivery_method><pickup_location>pick up</pickup_location></delivery_method></ORDER_TYPE>')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\ti'd like to order a <PIZZA_TYPE><pizza_type>pepperoni</pizza_type></PIZZA_TYPE>. make it <SIZE><pizza_size>14 inch</pizza_size></SIZE>")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\tlet's go with <ORDER_TYPE><delivery_method><pickup_location>take-out</pickup_location></delivery_method></ORDER_TYPE> from your <PICKUPADDRESS>fall city store</PICKUPADDRESS>, please")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\ti'll order a uhm <PIZZA_TYPE><pizza_type>4 cheese</pizza_type>s</PIZZA_TYPE> on <CRUST><pizza_crust>regular</pizza_crust></CRUST>. make it <SIZE><pizza_size>12 inch</pizza_size></SIZE>")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+(None, 'INFORM\tuse <NAME>rahul</NAME>')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('REORDER', 'REORDER\tcould i reorder my most recent order, please')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('REORDER', 'REORDER\tmay i reorder my most recent order, please')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('REORDER', 'REORDER\tplease place another order for my most frequent pizza')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('REORDER', 'REORDER\tcan i get my previous pizza again')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('HELLO', 'THANK\tawesome thank you')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('HELLO', "REQUEST\tcan you tell me <STATUS>where's my pizza order</STATUS>?")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\ti need a <SIZE><pizza_size>12 inch</pizza_size></SIZE> <PIZZA_TYPE><pizza_type>vegan</pizza_type></PIZZA_TYPE>, please')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\t<ORDER_TYPE><delivery_method>delivery</delivery_method></ORDER_TYPE> would be great, please')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('HELLO', 'HELLO\thello,')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+(None, 'CONFIRM\tyeah,, please')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('HELLO', 'THANK\tterrific thank you')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\tyeah, how about <ORDER_TYPE><delivery_method><pickup_location>take out</pickup_location></delivery_method></ORDER_TYPE>')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\tlet's go with <ORDER_TYPE><delivery_method><pickup_location>take-out</pickup_location></delivery_method></ORDER_TYPE>")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\tit's <PHONENUMBER><phone>519-555-0021</phone></PHONENUMBER>")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\ti'd like a uh... <SIZE><pizza_size>medium</pizza_size></SIZE> <PIZZA_TYPE><pizza_type>veggie supreme</pizza_type></PIZZA_TYPE>, please")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\ti'd like to get a <PIZZA_TYPE><pizza_type>pepperoni</pizza_type></PIZZA_TYPE> on <CRUST><pizza_crust>thin</pizza_crust> crust</CRUST>")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\tyes, how about <ORDER_TYPE><delivery_method>delivery</delivery_method></ORDER_TYPE>')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\t<PHONENUMBER><phone>206-555-1230</phone></PHONENUMBER>')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+(None, 'REQUEST\t<STATUS>how long until my pizza order arrives</STATUS>?')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\tactually, can you, please make it a <SIZE><pizza_size>12 inch</pizza_size></SIZE>')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('HELLO', 'HELLO\thello,')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+(None, 'THANK\tawesome thanks')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('REORDER', "REORDER\ti'd like to place an order for my favorite pizza order")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "DENY\tno, i'd like to change some<pizza_crust>thin</pizza_crust>g")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\ti need a <SIZE><pizza_size>12 inch</pizza_size></SIZE> <PIZZA_TYPE><pizza_type>4 cheese</pizza_type>s</PIZZA_TYPE>, please')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('REORDER', 'REORDER\tcould i order my previous pizza order again')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+(None, 'DENY\tnope')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('REORDER', 'REORDER\tplace another order for my most recent pizza again')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('REORDER', 'REORDER\tplease place an order for my most frequent order')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\they, how's it going? i'll have a <PIZZA_TYPE><pizza_type>4 cheese</pizza_type></PIZZA_TYPE>, please")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\t<ORDER_TYPE><delivery_method>delivery</delivery_method></ORDER_TYPE>, please')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('REORDER', "REORDER\ti'd like to get my most frequent again, please")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\tit is <PHONENUMBER><phone>519-555-1927</phone></PHONENUMBER>')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('REORDER', 'REORDER\treorder my previous pizza again')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('REORDER', 'REORDER\tmay i reorder my favorite order again, please')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+(None, 'THANK\tthanks')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+(None, 'CONFIRM\t, please yeah,')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+(None, 'DENY\tno')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('REORDER', 'REORDER\tmay i place another order for my preferred pizza again')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\thi, may i get a <SIZE><pizza_size>medium</pizza_size></SIZE> <PIZZA_TYPE><pizza_type>meat lovers</pizza_type></PIZZA_TYPE>, please')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\ti'll order a <PIZZA_TYPE><pizza_type>pepperoni</pizza_type></PIZZA_TYPE> on <CRUST><pizza_crust>regular</pizza_crust> crust</CRUST>. make it <SIZE><pizza_size>large</pizza_size></SIZE>, please")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('HELLO', "HELLO\they, how's it going?")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('REORDER', 'REORDER\tmay i order my previous pizza, please')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+(None, 'CONFIRM\tabsolutely yeah,')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\t<ORDER_TYPE><delivery_method><pickup_location>take-out</pickup_location></delivery_method></ORDER_TYPE> will be great, please')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('REORDER', 'REORDER\tmay i reorder my most frequent order')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('HELLO', 'THANK\tgreat thank you')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\tyep, let's go with <ORDER_TYPE><delivery_method>delivery</delivery_method></ORDER_TYPE>")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\thello, can i get a <PIZZA_TYPE><pizza_type>4 cheese</pizza_type></PIZZA_TYPE> ?')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\ti'd like to get a <SIZE><pizza_size>14 inch</pizza_size></SIZE> <PIZZA_TYPE><pizza_type>meat lovers</pizza_type></PIZZA_TYPE>")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('REORDER', 'REORDER\treorder my most frequent pizza order again')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\tyep, let's go with <ORDER_TYPE><delivery_method><pickup_location>pick up</pickup_location></delivery_method></ORDER_TYPE>, please")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\tmake it <ORDER_TYPE><delivery_method><pickup_location>take out</pickup_location></delivery_method></ORDER_TYPE>, please')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+(None, 'REQUEST\t<STATUS>how long until i get my pizza order</STATUS> ?')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\tcan i get a uhh... <SIZE><pizza_size>large</pizza_size></SIZE> <TOPPING>no dairy</TOPPING> <TOPPING>no meat</TOPPING> special, please')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+(None, 'CONFIRM\tyep, perfect')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\tyeah, let's go with <ORDER_TYPE><delivery_method><pickup_location>take out</pickup_location></delivery_method></ORDER_TYPE>, please")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "DENY\tnope, i'd like to change some<pizza_crust>thin</pizza_crust>g")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+(None, 'CONFIRM\tyes, perfect')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('REORDER', "REORDER\ti'd like to place another order for my previous pizza again, please")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\thello, can i get a <PIZZA_TYPE><pizza_type>veggie supreme</pizza_type></PIZZA_TYPE>, please ?')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+(None, 'CONFIRM\tthat would be great yep,')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+(None, "INFORM\tit's <NAME>david</NAME>")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('HELLO', "HELLO\they, how's it going?")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('REORDER', 'REORDER\tcould i reorder my most recent order, please')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('REORDER', 'REORDER\treorder my favorite pizza')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\t<ORDER_TYPE><delivery_method><pickup_location>take-out</pickup_location></delivery_method></ORDER_TYPE> would be great, please')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\t<PHONENUMBER><phone>206-555-5677</phone></PHONENUMBER>')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\tyes, <ORDER_TYPE><delivery_method><pickup_location>take-out</pickup_location></delivery_method></ORDER_TYPE> sounds good')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('REORDER', 'REORDER\treorder my most recent order')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('CHECK_ORDER', 'REQUEST\t<STATUS>how long</STATUS> until my pizza order is ready?')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\they, how's it going? may i get a <SIZE><pizza_size>medium</pizza_size></SIZE> <PIZZA_TYPE><pizza_type>hawaiian</pizza_type></PIZZA_TYPE>, please")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+(None, 'CONFIRM\tthat would be great yes,')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\tyes, <ORDER_TYPE><delivery_method>delivery</delivery_method></ORDER_TYPE> would be great, please')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+(None, "INFORM\tit's <NAME>eva</NAME>, please")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\tyep, <ORDER_TYPE><delivery_method><pickup_location>take-out</pickup_location></delivery_method></ORDER_TYPE>, please')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+(None, 'INFORM\tcan i get a different kind of <CRUST>crust</CRUST>')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\ti'd like a <PIZZA_TYPE><pizza_type>4 cheese</pizza_type></PIZZA_TYPE> on <CRUST><pizza_crust>thin</pizza_crust></CRUST>, please. make it <SIZE><pizza_size>medium</pizza_size></SIZE>")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\tcan i get a <PIZZA_TYPE><pizza_type>veggie supreme</pizza_type></PIZZA_TYPE> on <CRUST><pizza_crust>thin</pizza_crust> crust</CRUST>, please. make it <SIZE><pizza_size>14 inch</pizza_size></SIZE>')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('HELLO', 'HELLO\thi,')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\ti'll make the third pizza a <SIZE><pizza_size>large</pizza_size></SIZE> <PIZZA_TYPE><pizza_type>meat lovers</pizza_type></PIZZA_TYPE>, please")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\tmay i get <COUNT>three</COUNT> <SIZE><pizza_size>14 inch</pizza_size></SIZE> pizzas')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\thi, this is <order_name><NAME>ali</NAME></order_name> here can you change my order to <ORDER_TYPE><delivery_method><pickup_location>take out</pickup_location></delivery_method></ORDER_TYPE>')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\thi, th<order_name>is</order_name> <order_name>is</order_name> <order_name>is</order_name> <NAME>l<order_name>is</order_name>sa</NAME> can i change my order to <ORDER_TYPE><delivery_method><pickup_location>take out</pickup_location></delivery_method></ORDER_TYPE>, please')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\tgive me <COUNT>two</COUNT> pizzas on <CRUST><pizza_crust>regular</pizza_crust> crust</CRUST>. make them <SIZE><pizza_size>large</pizza_size></SIZE>, please')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('HELLO', 'HELLO\thello,')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\they, how's it going? my name is is <NAME>soumya</NAME> can you, please change my order to <ORDER_TYPE><delivery_method>delivery</delivery_method></ORDER_TYPE>")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\tlet's make the second one a <PIZZA_TYPE><pizza_type>veggie supreme</pizza_type></PIZZA_TYPE>. a <SIZE><pizza_size>small</pizza_size></SIZE>")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+(None, 'INFORM\tadd <TOPPING>red onion</TOPPING> to the other half of the second one')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('REORDER', "REORDER\tcould i order my preferred order also i'd like to remove <pizza_topping>olives</pizza_topping> from it")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\tmay i order my most frequent order also i'd like to get a uh <SIZE><pizza_size>14 inch</pizza_size></SIZE> <PIZZA_TYPE><pizza_type>hawaiian</pizza_type></PIZZA_TYPE>")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('REORDER', 'REORDER\torder my pizza order also can i add <TOPPING>green <pizza_topping>olives</pizza_topping></TOPPING> to it')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+(None, "INFORM\ti'll have <TOPPING>no red onion</TOPPING> on the second half of the first one")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\tcan i get a <PIZZA_TYPE>supreme</PIZZA_TYPE> on <CRUST>gluten free crust</CRUST> for the first one. let's go with a <SIZE><pizza_size>10 inch</pizza_size></SIZE>")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\ti'll take a uhm <PIZZA_TYPE><pizza_type>veggie supreme</pizza_type></PIZZA_TYPE> for the fourth pizza, please. and let's do <SIZE><pizza_size>12 inch</pizza_size></SIZE>")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('REORDER', "REORDER\tplease place another order for my pizza order also i'd like to order a <PIZZA_TYPE><pizza_type>hawaiian</pizza_type></PIZZA_TYPE>. make it <SIZE><pizza_size>12 inch</pizza_size></SIZE>")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\ti'd like a <ORDER_TYPE><delivery_method><pickup_location>take out</pickup_location></delivery_method></ORDER_TYPE> order")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\they, how's it going? i'll change my order to <ORDER_TYPE><delivery_method><pickup_location>take-out</pickup_location></delivery_method></ORDER_TYPE>, please")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('HELLO', 'HELLO\thello,')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\ti'd like to get a <PIZZA_TYPE><pizza_type>4 cheese</pizza_type>s</PIZZA_TYPE> on <CRUST>deep dish</CRUST> for the first pizza")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\ti'll take <COUNT>two</COUNT> pizzas on <CRUST><pizza_crust>thin</pizza_crust> crust</CRUST>")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\thello, this is <order_name><NAME>rahul</NAME></order_name> here can i, please change my order to <ORDER_TYPE><delivery_method><pickup_location>pick up</pickup_location></delivery_method></ORDER_TYPE>')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('REORDER', 'REORDER\tcan i reorder my most frequent order again, please also may i order a <SIZE><pizza_size>medium</pizza_size></SIZE> <PIZZA_TYPE><pizza_type>4 cheese</pizza_type></PIZZA_TYPE>')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\ti want a <SIZE><pizza_size>large</pizza_size></SIZE> <PIZZA_TYPE>5 cheese</PIZZA_TYPE> on <CRUST>gluten free</CRUST> for the third pizza, please')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\thello, i'm is <NAME>danko</NAME> can you change my order to <ORDER_TYPE><delivery_method><pickup_location>take-out</pickup_location></delivery_method></ORDER_TYPE>, please")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\thello, i uhm... have an order for two <pizza_size>14 inch</pizza_size> pizzas on crust, a <pizza_type>4 cheese</pizza_type>s and a <pizza_type>4 cheese</pizza_type> can i uh... change my order to <ORDER_TYPE><delivery_method><pickup_location>take out</pickup_location></delivery_method></ORDER_TYPE>')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\ti'd like to place an order for <ORDER_TYPE><delivery_method><pickup_location>pick up</pickup_location></delivery_method></ORDER_TYPE>")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\tplease add <PIZZA_TOPPING>green <pizza_topping>olives</pizza_topping></PIZZA_TOPPING> to the right half of the third one')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\ti'll order uh... <COUNT>two</COUNT> pizzas. i'll go with <SIZE><pizza_size>medium</pizza_size></SIZE> for all of them, please")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\tmay i get <COUNT>two</COUNT> pizzas on <CRUST>deep dish</CRUST>. i'd like a <PIZZA_TYPE><pizza_type>meat lovers</pizza_type></PIZZA_TYPE> for the first pizza. and let's do <SIZE><pizza_size>12 inch</pizza_size></SIZE>, please let's make the second one a uh <PIZZA_TYPE><pizza_type>meat lovers</pizza_type></PIZZA_TYPE>, please. make it <SIZE><pizza_size>large</pizza_size></SIZE>. how much is that gonna cost?")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\tcan i order uhm <COUNT>five</COUNT> pizzas. all of them <SIZE><pizza_size>10 inch</pizza_size></SIZE>, please')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\tmay i add <TOPPING><pizza_topping>mushrooms</pizza_topping></TOPPING> to the first half of the third one')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\t<TOPPING>remove <pizza_topping>olives</pizza_topping></TOPPING> from the other half of the first one')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\they, how's it going? this is <order_name><NAME>logan</NAME></order_name> here can you, please switch my order to <ORDER_TYPE><delivery_method>delivery</delivery_method></ORDER_TYPE>")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\tcan i order <COUNT>three</COUNT> pizzas on <CRUST><pizza_crust>regular</pizza_crust></CRUST>, please. i'll go with <SIZE><pizza_size>medium</pizza_size></SIZE> for all of them")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\thello, this is <order_name><NAME>lissa</NAME></order_name> here can you change my order to <ORDER_TYPE><delivery_method>delivery</delivery_method></ORDER_TYPE>')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\ti'll order <COUNT>two</COUNT> pizzas. all of them <SIZE><pizza_size>medium</pizza_size></SIZE>")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\ti want to <TOPPING>remove extra <pizza_topping>ham</pizza_topping></TOPPING> from the left half of the first one')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\tremove double the amount of <pizza_type>pepperoni</pizza_type> from the third pizza')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\ti'd like to place an order for <ORDER_TYPE><delivery_method><pickup_location>take out</pickup_location></delivery_method></ORDER_TYPE>")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+(None, 'INFORM\tadd <TOPPING>provolone</TOPPING> to the other half of the second pizza')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\ti'll make the second one a uhh <PIZZA_TYPE><pizza_type>veggie supreme</pizza_type></PIZZA_TYPE>. a <SIZE><pizza_size>12 inch</pizza_size></SIZE>")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('REORDER', "REORDER\tplease place an order for my most common also i'd like to get a uhm <pizza_size>14 inch <pizza_type>pepperoni</pizza_type> on <pizza_crust>thin</pizza_crust></pizza_size> crust, please")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\tlet's make the second one a <SIZE><pizza_size>12 inch</pizza_size></SIZE> <PIZZA_TYPE><pizza_type>hawaiian</pizza_type></PIZZA_TYPE> on <SIZE><pizza_crust>regular</pizza_crust></SIZE>, please")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\tthe second pizza i'll do a <PIZZA_TYPE><pizza_type>vegan</pizza_type></PIZZA_TYPE> on <CRUST><pizza_crust>regular</pizza_crust></CRUST>. a <SIZE><pizza_size>small</pizza_size></SIZE>")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\thi, i'll i'll switch my order to <ORDER_TYPE><delivery_method>delivery</delivery_method></ORDER_TYPE>, please")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\ti need <COUNT>three</COUNT> <SIZE><pizza_size>small</pizza_size></SIZE> pizzas on <CRUST><pizza_crust>thin</pizza_crust> crust</CRUST>')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\ti'd like to get a <PIZZA_TYPE>vegetarian</PIZZA_TYPE> for the second pizza. a <SIZE><pizza_size>small</pizza_size></SIZE>")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\tcan i <TOPPING>remove green <pizza_topping>peppers</pizza_topping></TOPPING> from the left half of the first one')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\ti need <COUNT>three</COUNT> pizzas on <CRUST><pizza_crust>regular</pizza_crust> crust</CRUST>. i'll go with <SIZE><pizza_size>14 inch</pizza_size></SIZE> for all of them")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\thi, this is <order_name><NAME>daniel</NAME></order_name> here can you change my order to <ORDER_TYPE><delivery_method><pickup_location>pick up</pickup_location></delivery_method></ORDER_TYPE>')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('REORDER', "REORDER\treorder my favorite pizza order also i'll have a uhm... <pizza_size>small</pizza_size> <pizza_type>veggie supreme</pizza_type>, please")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\tfor the third pizza i'd like a uh <PIZZA_TYPE><pizza_type>hawaiian</pizza_type><PIZZA_TYPE> on <CRUST>gluten free crust</CRUST>, please. a <SIZE><pizza_size>medium</pizza_size></SIZE>")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('REORDER', 'REORDER\tcould i place another order for my most common also give me a <pizza_size>14 inch</pizza_size> <pizza_type>hawaiian</pizza_type> on gluten free crust, please')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\ti want to <TOPPING>remove extra <pizza_topping>ham</pizza_topping></TOPPING> from the second pizza')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\thi, can i change my order to <ORDER_TYPE><delivery_method>delivery</delivery_method></ORDER_TYPE>, please')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('REORDER', 'REORDER\tcould i place an order for my most frequent order also please add bacon to it')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\tmay i order a <PIZZA_TYPE><pizza_type>hawaiian</pizza_type></PIZZA_TYPE> on <CRUST><pizza_crust>thin</pizza_crust></CRUST> for the second one, please. and let's do <SIZE><pizza_size>small</pizza_size></SIZE>")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\tcan i <TOPPING>remove italian <pizza_topping>sausage</pizza_topping></TOPPING> from the one half of the third pizza')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('REORDER', 'REORDER\tcould i get my most common also can i get no red <pizza_topping>onions</pizza_topping> on it')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\tcan i get a uhm... <PIZZA_TYPE><pizza_type>vegan</pizza_type></PIZZA_TYPE> for the second one')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('REORDER', "REORDER\ti'd like to place another order for my preferred pizza order also also get no mozzarella on one half")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('REORDER', 'REORDER\tmay i place an order for my favorite also i want to remove <pizza_topping>onions</pizza_topping> from it')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\tcan i order a uhh <PIZZA_TYPE><pizza_type>vegan</pizza_type></PIZZA_TYPE> for the first one, please')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\they, how's it going? th<order_name>is</order_name> <order_name>is</order_name> <order_name>is</order_name> <NAME>soumya</NAME> can you change my order to <ORDER_TYPE><delivery_method><pickup_location>take out</pickup_location></delivery_method></ORDER_TYPE>")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\ti'd like to <TOPPING>remove extra <pizza_type>pepperoni</pizza_type></TOPPING> from the second half of the second pizza")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('REORDER', 'REORDER\treorder my preferred also please add <pizza_topping>pineapple</pizza_topping> to the right half')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('REORDER', "REORDER\tcan i reorder my favorite pizza order again also i'll have a <pizza_size>large</pizza_size> <pizza_type>vegan</pizza_type>")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\thi, can you, please switch my order to <ORDER_TYPE><delivery_method><pickup_location>take-out</pickup_location></delivery_method></ORDER_TYPE>')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\thi, can i switch my order to <ORDER_TYPE><delivery_method><pickup_location>take out</pickup_location></delivery_method></ORDER_TYPE>, please')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\they, how's it going? my phone number is <PHONENUMBER><phone>206-555-1230</phone></PHONENUMBER> i'd like to change my order to <ORDER_TYPE><delivery_method><pickup_location>take-out</pickup_location></delivery_method></ORDER_TYPE>")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\ti want to order a uh... <SIZE><pizza_size>10 inch</pizza_size></SIZE> <PIZZA_TYPE><pizza_type>pepperoni</pizza_type></PIZZA_TYPE> on <CRUST>gluten free</CRUST> for the second one, please')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('REORDER', "REORDER\tplease order my usual pizza also i'd like to order a uh... <pizza_size>medium</pizza_size> <pizza_type>hawaiian</pizza_type>")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('REORDER', 'REORDER\tmay i order my favorite pizza order, please also remove sliced <pizza_topping>ham</pizza_topping> from the first half')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('REORDER', 'REORDER\tcould i place another order for my most frequent also please add double the amount of <pizza_type>pepperoni</pizza_type> to the first half')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('HELLO', 'HELLO\thello,')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+(None, 'INFORM\ti want to order <COUNT>two</COUNT> pizzas, please')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('REORDER', 'REORDER\tplease place an order for my favorite order also please remove canadian bacon from it')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\they, how's it going? my name is is <NAME>lissa</NAME> can you change my order to <ORDER_TYPE><delivery_method><pickup_location>take out</pickup_location></delivery_method></ORDER_TYPE>")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\thello, i'll i'll switch my order to <ORDER_TYPE><delivery_method><pickup_location>pick up</pickup_location></delivery_method></ORDER_TYPE>")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('REORDER', 'REORDER\tget my usual pizza again also may i get a <pizza_type>meat lovers</pizza_type>. make it <pizza_size>medium</pizza_size>, please')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\tmay i order a uhh... <PIZZA_TYPE><pizza_type>vegan</pizza_type></PIZZA_TYPE> for the third one. let's go with a <SIZE><pizza_size>small</pizza_size></SIZE>")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\thi, i'll switch my order to <ORDER_TYPE><delivery_method><pickup_location>take out</pickup_location></delivery_method></ORDER_TYPE>")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('HELLO', 'HELLO\thi,')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\ti'll take uh... <COUNT>five</COUNT> <SIZE><pizza_size>12 inch</SIZE> pizzas on <CRUST><pizza_crust>thin</pizza_crust></pizza_size> crust</CRUST>, please")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\tthe second pizza i'll do a uh... <PIZZA_TYPE><pizza_type>hawaiian</pizza_type></PIZZA_TYPE> on <CRUST><pizza_crust>thin</pizza_crust></CRUST>. a <SIZE><pizza_size>large</pizza_size></SIZE>")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\tmay i get a uhm all <TOPPING>cheese</TOPPING> on <CRUST><pizza_crust>regular</pizza_crust> crust</CRUST> for the third one. let's go with a <SIZE><pizza_size>12 inch</pizza_size></SIZE>")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\tfor the second one i'd like a uhm <PIZZA_TYPE><pizza_type>meat lovers</pizza_type></PIZZA_TYPE> on <CRUST>gluten free crust</CRUST>, please. let's go with a <SIZE><pizza_size>10 inch</pizza_size></SIZE>")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('REORDER', "REORDER\ti'd like to place an order for my favorite again also i want to order a uh <pizza_type>pepperoni</pizza_type>. make it <pizza_size>medium</pizza_size>, please")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('REORDER', "REORDER\ti'd like to place an order for my favorite pizza again also give me a <pizza_type>pepperoni</pizza_type> on gluten free")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('REORDER', 'REORDER\torder my preferred order again also i need to remove <pizza_topping>sausage</pizza_topping> from one half')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\ti need uh... <COUNT>two<COUNT> pizzas. make them <SIZE><pizza_size>14 inch</pizza_size></SIZE>, please')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\tlet's make the third one a uhh <TOPPING><pizza_type>pepperoni</pizza_type></TOPPING>. make it <SIZE><pizza_size>10 inch</pizza_size></SIZE>, please")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\ti want to order <COUNT>four</COUNT> pizzas, please. make them <SIZE><pizza_size>large</pizza_size></SIZE>')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+(None, 'INFORM\ti want to add <TOPPING>bacon</TOPPING> to the other half of the first one')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\ti'll make the third one a uhm... <SIZE><pizza_size>medium</pizza_size></SIZE> <TOPPING><pizza_type>pepperoni</pizza_type></TOPPING> on <CRUST><pizza_crust>thin</pizza_crust> crust</CRUST>")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\thello, may i place an order for <ORDER_TYPE><delivery_method><pickup_location>take-out</pickup_location></delivery_method></ORDER_TYPE>, please')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\ti want to order <COUNT>two</COUNT> pizzas on <CRUST><pizza_crust>thin</pizza_crust></CRUST>. make them <SIZE><pizza_size>14 inch</pizza_size></SIZE>')
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', "INFORM\ti'll make the first pizza a <PIZZA_TYPE><pizza_type>hawaiian</pizza_type></PIZZA_TYPE>. make it <SIZE><pizza_size>12 inch</pizza_size></SIZE>, please")
+Type the sentence to be parsed by the rule-based system or type quit to exit
+('INFORM', 'INFORM\tmay i get uh <COUNT>two</COUNT> <SIZE><pizza_size>large</pizza_size></SIZE> pizzas, please')
+Type the sentence to be parsed by the rule-based system or type quit to exit

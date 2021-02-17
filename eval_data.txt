@@ -1,4 +1,3 @@
-intent	utterance
 CONFIRM	that would be great yes,
 INFORM	let's go with <ORDER_TYPE>pick up</ORDER_TYPE>
 HELLO	hey, how's it going?
