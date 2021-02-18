@@ -16,6 +16,7 @@ class NLUDefault:
 	def parse(self, inputStr):
 
 		#tokenized input string
+		inputStr = inputStr.strip()
 		tokenInput = inputStr.split()
 
 		#annotated string
@@ -29,13 +30,13 @@ class NLUDefault:
 		# Pizza info
 		for flavor in flavors:
 
-			inputStr, num_replace = re.subn(flavor, "<pizza_type>"+flavor+"</pizza_type>", inputStr)
+			inputStr, num_replace = re.subn(flavor, "<PIZZA_TYPE>"+flavor+"</PIZZA_TYPE>", inputStr)
 
 			if num_replace > 0:
 				self.Intent = "INFORM"
 
 		for size in sizes:
-			inputStr, num_replace = re.subn(size, "<pizza_size>" + size + "</pizza_size>", inputStr)
+			inputStr, num_replace = re.subn(size, "<SIZE>" + size + "</SIZE>", inputStr)
 
 			if num_replace > 0:
 				self.Intent = "INFORM"
@@ -46,17 +47,17 @@ class NLUDefault:
 
 		if size is not None:
 			size = size.group(0)
-			inputStr, num_replace = re.subn(size, "<pizza_size>" + size + "</pizza_size>", inputStr)
+			inputStr, num_replace = re.subn(size, "<SIZE>" + size + "</SIZE>", inputStr)
 			self.Intent = "INFORM"
 
 		for crust in crusts:
-			inputStr, num_replace = re.subn(crust, "<pizza_crust>" + crust + "</pizza_crust>", inputStr)
+			inputStr, num_replace = re.subn(crust, "<CRUST>" + crust + "</CRUSST>", inputStr)
 
 			if num_replace > 0:
 				self.Intent = "INFORM"
 
 		for topping in toppings:
-			inputStr, num_replace = re.subn(topping, "<pizza_topping>"+topping+"</pizza_topping>", inputStr)
+			inputStr, num_replace = re.subn(topping, "<TOPPING>"+topping+"</TOPPING>", inputStr)
 
 
 			if num_replace > 0:
@@ -69,7 +70,7 @@ class NLUDefault:
 
 		if address is not None:
 			address = address.group(0)
-			inputStr, num_replace = re.subn(address, "<address>"+address+"</address>", inputStr)
+			inputStr, num_replace = re.subn(address, "<ADDRESS>"+address+"</ADDRESS>", inputStr)
 
 			if num_replace > 0:
 				self.Intent = "INFORM"
@@ -82,7 +83,7 @@ class NLUDefault:
 
 		if deliver is not None:
 			deliver = deliver.group(0)
-			inputStr = re.sub(deliver, "<delivery_method>" + deliver + "</delivery_method>", inputStr)
+			inputStr = re.sub(deliver, "<ORDER_TYPE>" + deliver + "</ORDER_TYPE>", inputStr)
 			self.Intent = "INFORM"
 
 		pickup_regex = re.compile("(pickup|pick-up|pick up|takeout|take-out|take out)")
@@ -92,14 +93,14 @@ class NLUDefault:
 
 		if pickup is not None:
 			pickup = pickup.group(0)
-			inputStr = re.sub(pickup, "<delivery_method>" + pickup + "</delivery_method>", inputStr)
+			inputStr = re.sub(pickup, "<ORDER_TYPE>" + pickup + "</ORDER_TYPE>", inputStr)
 			self.Intent = "INFORM"
 
 			from_store = pickup_regex.search(inputStr)
 
 			if from_store is not None:
 				from_store = from_store.group(0)
-				inputStr = re.sub(from_store, "<pickup_location>" + from_store + "</pickup_location>", inputStr)
+				inputStr = re.sub(from_store, "<PICKUPADDRESS>" + from_store + "</PICKUPADDRESS>", inputStr)
 				self.Intent = "INFORM"
 
 
@@ -110,19 +111,19 @@ class NLUDefault:
 
 		if number is not None:
 			number = number.group(0)
-			inputStr, num_replace = re.subn(number, "<phone>"+number+"</phone>", inputStr)
+			inputStr, num_replace = re.subn(number, "<PHONENUMBER>"+number+"</PHONENUMBER>", inputStr)
 			self.Intent = "INFORM"
 
 		# NAMES
 		if "it's" in inputStr:
 			check = inputStr.split("it's ")
 			if not check[1].startswith("<"):
-				inputStr = re.sub(check[1], "<order_name>"+check[1]+"</order_name>", inputStr)
+				inputStr = re.sub(check[1], "<NAME>"+check[1]+"</NAME>", inputStr)
 				self.Intent = "INFORM"
 		if "this is" in inputStr:
 			check = inputStr.split("this is ")
 			tokenized_after = check[1].split()
-			inputStr = re.sub(tokenized_after[0], "<order_name>"+tokenized_after[0]+"</order_name>", inputStr)
+			inputStr = re.sub(tokenized_after[0], "<NAME>"+tokenized_after[0]+"</NAME>", inputStr)
 			self.Intent = "INFORM"
 
 		# Dialog flow control/User-initiative requests
@@ -144,6 +145,14 @@ class NLUDefault:
 		elif check_check.search(inputStr) != None:
 			self.Intent = "CHECK_ORDER"
 
+		confirm_check = re.compile("(yes|yeah|sure|okay|yep)")
+		deny_check = re.compile("(no|nope|nah|nada)")
+
+		if confirm_check.search(inputStr) != None:
+			self.Intent = "CONFIRM"
+		elif deny_check.search(inputStr) != None:
+			self.Intent = "DENY"
+
 		if self.Intent is None:
 			hello_regex = re.compile("(hello|hey|how's it going|greetings|hi|yo)")
 
@@ -154,14 +163,14 @@ class NLUDefault:
 
 		return self.Intent, inputStr
 
+if __name__ == "__main__":
+	invalue = 'nomorepizzaplease'
 
-invalue = 'nomorepizzaplease'
-
-while invalue != 'quit':
-	print('Type the sentence to be parsed by the rule-based system or type quit to exit')
-	invalue = input()
-	NLU = NLUDefault()
-	print(NLU.parse(invalue))
+	while invalue != 'quit':
+		print('Type the sentence to be parsed by the rule-based system or type quit to exit')
+		invalue = input()
+		NLU = NLUDefault()
+		print(NLU.parse(invalue))
 
 
 

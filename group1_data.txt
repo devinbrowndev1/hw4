@@ -1,3 +1,5 @@
+HELLO	hello
+HELLO	hi
 CONFIRM	yes,
 CONFIRM	yes,
 CONFIRM	amazing thanks

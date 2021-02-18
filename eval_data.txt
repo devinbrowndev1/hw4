@@ -150,7 +150,7 @@ INFORM	can i <TOPPING>remove green peppers</TOPPING> from the left half of the f
 INFORM	i need <COUNT>three</COUNT> pizzas on <CRUST>regular crust</CRUST>. i'll go with <SIZE>14 inch</SIZE> for all of them
 INFORM	hi, this is <NAME>daniel</NAME> here can you change my order to <ORDER_TYPE>pick up</ORDER_TYPE>
 REORDER	reorder my favorite pizza order also i'll have a uhm... small veggie supreme, please
-INFORM	for the third pizza i'd like a uh <PIZZA_TYPE>hawaiian<PIZZA_TYPE> on <CRUST>gluten free crust</CRUST>, please. a <SIZE>medium</SIZE>
+INFORM	for the third pizza i'd like a uh <PIZZA_TYPE>hawaiian</PIZZA_TYPE> on <CRUST>gluten free crust</CRUST>, please. a <SIZE>medium</SIZE>
 REORDER	could i place another order for my most common also give me a 14 inch hawaiian on gluten free crust, please
 INFORM	i want to <TOPPING>remove extra ham</TOPPING> from the second pizza
 INFORM	hi, can i change my order to <ORDER_TYPE>delivery</ORDER_TYPE>, please
@@ -189,7 +189,7 @@ INFORM	for the second one i'd like a uhm <PIZZA_TYPE>meat lovers</PIZZA_TYPE> on
 REORDER	i'd like to place an order for my favorite again also i want to order a uh pepperoni. make it medium, please
 REORDER	i'd like to place an order for my favorite pizza again also give me a pepperoni on gluten free
 REORDER	order my preferred order again also i need to remove sausage from one half
-INFORM	i need uh... <COUNT>two<COUNT> pizzas. make them <SIZE>14 inch</SIZE>, please
+INFORM	i need uh... <COUNT>two</COUNT> pizzas. make them <SIZE>14 inch</SIZE>, please
 INFORM	let's make the third one a uhh <TOPPING>pepperoni</TOPPING>. make it <SIZE>10 inch</SIZE>, please
 INFORM	i want to order <COUNT>four</COUNT> pizzas, please. make them <SIZE>large</SIZE>
 INFORM	i want to add <TOPPING>bacon</TOPPING> to the other half of the first one
