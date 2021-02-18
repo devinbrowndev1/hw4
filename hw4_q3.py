@@ -1,166 +1,93 @@
 import re
 import sys
+from hw4_q1 import NLUDefault
+import hw4_q2
+from sklearn.metrics import f1_score
 
 
-class NLUDefault:
+if __name__ == "__main__":
 
-	def __init__(self):
-		self.oflavors = ["vegan", "hawaiian", "meat lovers", "4 cheese", "pepperoni", "veggie supreme"]
-		self.osizes = ["small", "medium", "large"]
-		self.ocrusts = ["thin", "regular", "gluten-free", "deep-dish"]
-		self.otoppings = ['onions','olives','swiss cheese','pineapple','provolone cheese','anchovies','extra cheese','peppers','pepporoni','sausage','ham','mushrooms']
-		self.Domain = "pizza"
-		self.Intent = None
-		self.Slots = {}
-	   
-	def parse(self, inputStr):
+	def process_input(in_value):
+		intent_val, trash = hw4_q2.convert_to_ngrams(["BOS "+in_value+" EOS"])
+		intent_val = hw4_q2.feat_vector(intent_val[0], unique_ngrams)
 
-		#tokenized input string
-		tokenInput = inputStr.split()
+		slots_val = hw4_q2.sent2features([(w,) for w in in_value.split()])
 
-		#annotated string
-		annotatedStr = inputStr
+		intent = NLU_q2_intents.predict([intent_val])
+		slots = NLU_q2_slots.predict([slots_val])
 
-		flavors = self.oflavors
-		sizes = self.osizes
-		crusts = self.ocrusts
-		toppings = self.otoppings
+		annotated_utterance = hw4_q2.BIO2sent(in_value.split(), slots[0])
 
-		# Pizza info
-		for flavor in flavors:
+		return intent[0], annotated_utterance
 
-			inputStr, num_replace = re.subn(flavor, "<pizza_type>"+flavor+"</pizza_type>", inputStr)
+	NLU_q1 = NLUDefault()
+	NLU_q2_intents, NLU_q2_slots, unique_ngrams = hw4_q2.train_both_models()
 
-			if num_replace > 0:
-				self.Intent = "INFORM"
+	hw4_q2.evaluate_stats(NLU_q2_intents, NLU_q2_slots, 'eval_data.txt', unique_ngrams)
 
-		for size in sizes:
-			inputStr, num_replace = re.subn(size, "<pizza_size>" + size + "</pizza_size>", inputStr)
-
-			if num_replace > 0:
-				self.Intent = "INFORM"
-
-		size_regex = re.compile("[0-9]{2}.*(inch|in)")
-
-		size = size_regex.search(inputStr)
-
-		if size is not None:
-			size = size.group(0)
-			inputStr, num_replace = re.subn(size, "<pizza_size>" + size + "</pizza_size>", inputStr)
-			self.Intent = "INFORM"
-
-		for crust in crusts:
-			inputStr, num_replace = re.subn(crust, "<pizza_crust>" + crust + "</pizza_crust>", inputStr)
-
-			if num_replace > 0:
-				self.Intent = "INFORM"
-
-		for topping in toppings:
-			inputStr, num_replace = re.subn(topping, "<pizza_topping>"+topping+"</pizza_topping>", inputStr)
+	with open('clean_eval.txt') as q1_data:
+		sentences = q1_data.readlines()
 
 
-			if num_replace > 0:
-				self.Intent = "INFORM"
+	q1_predictions = [NLU_q1.parse(sentence) for sentence in sentences]
+	#[(intent, annotated),]
 
-		#ADDRESSES
-		address_regex = re.compile("[0-9]+ .* ([A|a]ve|[W|w]ay|[S|s]treet|[B|b]lvd)")
+	intents_preds = [l[0] for l in q1_predictions]
+	slots_preds = [l[1] for l in q1_predictions]
 
-		address = address_regex.search(inputStr)
+	hw4_q2.evaluate_rules('eval_data.txt', intents_preds, slots_preds)
 
-		if address is not None:
-			address = address.group(0)
-			inputStr, num_replace = re.subn(address, "<address>"+address+"</address>", inputStr)
-
-			if num_replace > 0:
-				self.Intent = "INFORM"
+	
 
 
-		#DELIVERY METHOD
-		delivery_regex = re.compile("(delivery|delivered|deliver)")
+	"""gold_intent = []
+	gold_slots_BIO = []
+	gold_slots_reg = []
+	with open('eval_data.txt') as eval_data:
+		for line in eval_data:
+			gold_intent.append(line.strip().split("\t")[0])
+			gold_slots_reg.append(line.strip().split("\t")[1])
+			gold_slots_BIO.append([bio for (w, bio) in hw4_q2.sent2BIO(line.strip().split("\t")[1])])
 
-		deliver = delivery_regex.search(inputStr)
+	q1_eval_intents = []
+	q1_eval_slots = []
+	q2_eval_intents = []
+	q2_eval_slots = []
 
-		if deliver is not None:
-			deliver = deliver.group(0)
-			inputStr = re.sub(deliver, "<delivery_method>" + deliver + "</delivery_method>", inputStr)
-			self.Intent = "INFORM"
+	with open('q1_predictions.txt', 'w') as q1:
+		with open('q2_predictions.txt', 'w') as q2:
+			for line in sys.stdin:
+				invalue = line.strip()
 
-		pickup_regex = re.compile("(pickup|pick-up|pick up|takeout|take-out|take out)")
-		from_store_regex = re.compile("(?<=from your ).*(store|location)")
+				intent_q1, slots_q1 = NLU_q1.parse(invalue) # q1 output
+				intent_q2, slots_q2 = process_input(invalue) # q2 output
 
-		pickup = pickup_regex.search(inputStr)
+				q1_eval_intents.append(intent_q1)
+				q1_eval_slots.append(slots_q1)
 
-		if pickup is not None:
-			pickup = pickup.group(0)
-			inputStr = re.sub(pickup, "<delivery_method>" + pickup + "</delivery_method>", inputStr)
-			self.Intent = "INFORM"
+				q2_eval_intents.append(intent_q2)
+				q2_eval_slots.append(slots_q2)
 
-			from_store = pickup_regex.search(inputStr)
+				q1.write("{}\t{}\n".format(intent_q1, slots_q1))
+				q2.write(intent_slots_q2)
 
-			if from_store is not None:
-				from_store = from_store.group(0)
-				inputStr = re.sub(from_store, "<pickup_location>" + from_store + "</pickup_location>", inputStr)
-				self.Intent = "INFORM"
+	print("q1 intents f1score" + str(f1_score(q1_eval_intents, gold_intent)))
+	print("q2 intents f1score" + str(f1_score(q2_eval_intents, gold_intent)))
 
+	q1_slot_acc = 0
+	q2_slot_acc = 0
 
-		#PHONE NUMBERS
-		phone_number = re.compile("[0-9]{3}-[0-9]{3}-[0-9]{4}")
+	for q1guess, q2guess in q1_eval_slots, q2_eval_slots:
+		if q1guess == gold_slots_reg:
+			q1_slot_acc += 1
+		if q2guess == gold_slots_BIO:
+			q2_slot_acc += 1
 
-		number = phone_number.search(inputStr)
+	q1_slot_acc = q1_slot_acc/len(q1_eval_slots)
+	q2_slot_acc = q2_slot_acc/len(q2_eval_slots)
 
-		if number is not None:
-			number = number.group(0)
-			inputStr, num_replace = re.subn(number, "<phone>"+number+"</phone>", inputStr)
-			self.Intent = "INFORM"
-
-		# NAMES
-		if "it's" in inputStr:
-			check = inputStr.split("it's ")
-			if not check[1].startswith("<"):
-				inputStr = re.sub(check[1], "<order_name>"+check[1]+"</order_name>", inputStr)
-				self.Intent = "INFORM"
-		if "this is" in inputStr:
-			check = inputStr.split("this is ")
-			tokenized_after = check[1].split()
-			inputStr = re.sub(tokenized_after[0], "<order_name>"+tokenized_after[0]+"</order_name>", inputStr)
-			self.Intent = "INFORM"
-
-		# Dialog flow control/User-initiative requests
-		reorder_check = re.compile("(reorder|usual|preferred)")
-		if reorder_check.search(inputStr.lower()) is not None:
-			self.Intent = "REORDER"
-
-		startover_check = re.compile("(startover|start-over|start over)")
-		cancel_check = re.compile("(cancel|stop|give up)")
-		repeat_check = re.compile("(repeat|say that again|come again|what was that)")
-		check_check = re.compile("(ready|when|where's the pizza i ordered)")
-
-		if startover_check.search(inputStr) != None:
-			self.Intent = "START-OVER"
-		elif cancel_check.search(inputStr) != None:
-			self.Intent = "CANCEL"
-		elif repeat_check.search(inputStr) != None:
-			self.Intent = "REPEAT"
-		elif check_check.search(inputStr) != None:
-			self.Intent = "CHECK_ORDER"
-
-		if self.Intent is None:
-			hello_regex = re.compile("(hello|hey|how's it going|greetings|hi|yo)")
-
-			hello = hello_regex.search(inputStr)
-
-			if hello is not None:
-				self.Intent = "HELLO"
-
-		return self.Intent, inputStr
-
-
-invalue = 'nomorepizzaplease'
-
-for line in sys.stdin:
-	invalue = line
-	NLU = NLUDefault()
-	print(NLU.parse(invalue))
+	print("q1 slot acc" + str(q1_slot_acc))
+	print("q2 slot acc" + str(q2_slot_acc))"""
 
 
 

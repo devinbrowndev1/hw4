@@ -1,0 +1,10 @@
+CONFIRM	that would be great yes,
+INFORM	let's go with <ORDER_TYPE>pick up</ORDER_TYPE>
+HELLO	hey, how's it going?
+INFORM	i'd like to order a pepperoni, please
+INFORM	hello, i'll have a <SIZE>small</SIZE> <PIZZA_TYPE>pepperoni, please</PIZZA_TYPE>
+THANK	awesome thanks
+INFORM	i'll get a <SIZE>large</SIZE> <PIZZA_TYPE>hawaiian, please</PIZZA_TYPE>
+INFORM	let's go with <NAME>pick up, please</NAME>
+INFORM	i'll get a uhh <SIZE>10 inch</SIZE> <PIZZA_TYPE>hawaiian</PIZZA_TYPE>
+INFORM	can i order a <SIZE>12 inch veggie, please</SIZE>

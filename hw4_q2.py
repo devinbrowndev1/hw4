@@ -171,6 +171,7 @@ def word2features(sent, i):
 
 
 # returns sentence tagged with BIO instead of html tags
+# [(word, B-x), (word, O), ...]
 def sent2BIO(sent):
     beginning = re.compile("<([^/]*)>([^<]*)")
     end = re.compile("(.*)</.*>")
@@ -202,6 +203,35 @@ def sent2BIO(sent):
 
     return bio_sent
 
+def BIO2sent(sent, bio_rep):
+    anno_sentence = ""
+    inside = False
+    curr_tag = None
+
+    for word, tag in zip(sent, bio_rep):
+        if tag == "O":
+            if not inside:
+                anno_sentence += word + " "
+            else:
+                anno_sentence = anno_sentence.strip() + "</{}> ".format(curr_tag) + word + " "
+                inside = False
+        elif tag.startswith("B"):
+            if inside:
+                anno_sentence = anno_sentence.strip() + "</{}> ".format(curr_tag)
+
+            curr_tag = tag.split("B-")[1]
+            inside = True
+
+            anno_sentence += "<{}>".format(curr_tag) + word + " "
+        elif tag.startswith("I"):
+            anno_sentence += word + " "
+
+    if inside:
+        anno_sentence = anno_sentence.strip() + "</{}> ".format(curr_tag)
+
+    return anno_sentence.strip()
+
+
 def sent2features(sent):
     return [word2features(sent, i) for i in range(len(sent))]
 
@@ -214,15 +244,11 @@ def sent2tokens(sent):
 
 def train_crf(utterances_anno):
 
-    train_sents = [sent2BIO(s) for s in utterances_anno] # change `sentences` to train input
-    test_sents = [sent2BIO(s) for s in utterances_anno] # change `sentences` to test input
+    train_sents = [sent2BIO(s) for s in utterances_anno] 
 
     X_train = [sent2features(s) for s in train_sents]
     y_train = [sent2labels(s) for s in train_sents]
 
-
-    X_test = [sent2features(s) for s in test_sents]
-    y_test = [sent2labels(s) for s in test_sents]
 
     # train
     crf = sklearn_crfsuite.CRF(
@@ -234,18 +260,64 @@ def train_crf(utterances_anno):
     )
     crf.fit(X_train, y_train);
 
-    y_preds = crf.predict(X_test)
-    labels = crf.classes_
+    #y_preds = crf.predict(X_test)
+    #labels = crf.classes_
 
-    print(metrics.flat_f1_score(y_test, y_preds, average='weighted', labels=labels))
+    #print(metrics.flat_f1_score(y_test, y_preds, average='weighted', labels=labels))
 
     return crf
 
 
+def evaluate_stats(svm, crf, eval_data_filename, unique_ngrams):
+    intent_gold, intent_test, annotated_eval, z = process_data(eval_data_filename)
 
-if __name__ == "__main__":
-    # read in the data
+    test_sents = [sent2BIO(s) for s in annotated_eval] 
 
+    X_test = [sent2features(s) for s in test_sents]
+    y_test = [sent2labels(s) for s in test_sents]
+
+    intent_test, trash = convert_to_ngrams(intent_test)
+    intent_test = [feat_vector(l, unique_ngrams) for l in intent_test]
+
+    intent_pred = svm.predict(intent_test)
+    slot_pred = crf.predict(X_test)
+
+    labels = crf.classes_
+
+    print("Statistical Intent tagger F1:")
+    print(sklearn.metrics.f1_score(intent_gold, intent_pred, average='weighted', zero_division=0))
+
+    print("Statistical Slot tagger F1:")
+    print(metrics.flat_f1_score(y_test, slot_pred, average='weighted', labels=labels, zero_division=0))
+
+# take in y_pred and y_true
+
+# return dict of accuracy and recall 
+
+def evaluate_rules(eval_data_filename, intents_preds, slots_preds):
+    intent_gold, x, annotated_eval, z = process_data(eval_data_filename)
+
+    slots_gold = [sent2BIO(s) for s in annotated_eval] 
+    slots_gold = [sent2labels(s) for s in slots_gold]
+    slots_preds = [sent2BIO(s) for s in slots_preds]
+    slots_preds = [sent2labels(s) for s in slots_preds]
+
+    labels_counter_preds = [y for x in slots_preds for y in x]
+    labels_counter_gold = [y for x in slots_gold for y in x]
+
+    labels = list(Counter(labels_counter_gold + labels_counter_preds).keys())
+
+
+    print("Rule-based Intent tagger F1:")
+    print(sklearn.metrics.f1_score(intent_gold, intents_preds, average='weighted', zero_division=0))
+
+    print("Rule-based Slot tagger F1:")
+    print(metrics.flat_f1_score(slots_gold, slots_preds, average='weighted', labels=labels, zero_division=0))
+
+
+
+
+def train_both_models():
     intent_labels, intent_input, utterances_anno, utterances_unanno = process_data('group1_data.txt')
 
     # train the intents model
@@ -258,12 +330,32 @@ if __name__ == "__main__":
     # train the slots model
     slots_mod = train_crf(utterances_anno)
 
+    return intent_mod, slots_mod, unique_ngrams
+
+
+if __name__ == "__main__":
+    # read in the data
+
+    intent_labels, intent_input, utterances_anno, utterances_unanno = process_data('group1_data.txt')
+
+    # train the intents model
+    intent_input, unique_ngrams = convert_to_ngrams(intent_input) # length = # of sentences (list of bigrams)
+
+    intent_input = create_intents_train_test(intent_input, unique_ngrams) # length = # of sentences (list of features)
+
+    print("Training intent model...")
+    intent_mod = train_intent_model(intent_input, intent_labels)
+
+    # train the slots model
+    print("Training slots model...")
+    slots_mod = train_crf(utterances_anno)
+
     # read from stdin
 
     in_value = ""
 
     while in_value != "q":
-        print("Enter an utterance:")
+        print("Enter an utterance: (q to quit)")
         in_value = input()
 
         intent_val, trash = convert_to_ngrams(["BOS "+in_value+" EOS"])
@@ -274,7 +366,9 @@ if __name__ == "__main__":
         intent = intent_mod.predict([intent_val])
         slots = slots_mod.predict([slots_val])
 
-        print("{}\t{}".format(intent, slots))
+        annotated = BIO2sent(in_value.split(), slots[0])
+
+        print("{}\t{}".format(intent[0], annotated))
 
 
 
