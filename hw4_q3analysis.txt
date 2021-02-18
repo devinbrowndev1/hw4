@@ -1,0 +1,31 @@
+
+Before:
+Statistical Intent tagger F1:
+0.9045474458503984
+Statistical Slot tagger F1:
+0.8888035067072234
+Rule-based Intent tagger F1:
+0.6893975014313996
+Rule-based Slot tagger F1:
+0.8719517025580064
+
+Errors made by Rule-based System:
+- PICKUPADDRESS is supposed to only surround the store location for pickup,
+  but our regex was catching the words 'pick up' and 'take out' instead
+- We didn't have a THANK intent
+- Our 'HELLO' intent was looking for the substring 'yo' but that caught strings
+  with the word 'you' in them 
+- Our NLU class was setting intent and not resetting it to None when beginning
+  the next parse
+- We needed to expand the phrases that would trigger the REORDER intent
+- Overwriting INFORM intents with other intents
+
+After fixing errors:
+Statistical Intent tagger F1:
+0.9045474458503984
+Statistical Slot tagger F1:
+0.8888035067072234
+Rule-based Intent tagger F1:
+0.8251930092134251
+Rule-based Slot tagger F1:
+0.89877085832567

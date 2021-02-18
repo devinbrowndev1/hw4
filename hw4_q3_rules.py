@@ -15,6 +15,7 @@ class NLUDefault:
 	   
 	def parse(self, inputStr):
 
+		self.Intent = None
 		#tokenized input string
 		inputStr = inputStr.strip()
 		tokenInput = inputStr.split()
@@ -51,7 +52,7 @@ class NLUDefault:
 			self.Intent = "INFORM"
 
 		for crust in crusts:
-			inputStr, num_replace = re.subn(crust, "<CRUST>" + crust + "</CRUSST>", inputStr)
+			inputStr, num_replace = re.subn(crust, "<CRUST>" + crust + "</CRUST>", inputStr)
 
 			if num_replace > 0:
 				self.Intent = "INFORM"
@@ -96,7 +97,7 @@ class NLUDefault:
 			inputStr = re.sub(pickup, "<ORDER_TYPE>" + pickup + "</ORDER_TYPE>", inputStr)
 			self.Intent = "INFORM"
 
-			from_store = pickup_regex.search(inputStr)
+			from_store = from_store_regex.search(inputStr)
 
 			if from_store is not None:
 				from_store = from_store.group(0)
@@ -126,40 +127,54 @@ class NLUDefault:
 			inputStr = re.sub(tokenized_after[0], "<NAME>"+tokenized_after[0]+"</NAME>", inputStr)
 			self.Intent = "INFORM"
 
-		# Dialog flow control/User-initiative requests
-		reorder_check = re.compile("(reorder|usual|preferred)")
-		if reorder_check.search(inputStr.lower()) is not None:
-			self.Intent = "REORDER"
-
-		startover_check = re.compile("(startover|start-over|start over)")
-		cancel_check = re.compile("(cancel|stop|give up)")
-		repeat_check = re.compile("(repeat|say that again|come again|what was that)")
-		check_check = re.compile("(ready|when|where's the pizza i ordered)")
-
-		if startover_check.search(inputStr) != None:
-			self.Intent = "START-OVER"
-		elif cancel_check.search(inputStr) != None:
-			self.Intent = "CANCEL"
-		elif repeat_check.search(inputStr) != None:
-			self.Intent = "REPEAT"
-		elif check_check.search(inputStr) != None:
-			self.Intent = "CHECK_ORDER"
-
-		confirm_check = re.compile("(yes|yeah|sure|okay|yep)")
-		deny_check = re.compile("(no|nope|nah|nada)")
-
-		if confirm_check.search(inputStr) != None:
-			self.Intent = "CONFIRM"
-		elif deny_check.search(inputStr) != None:
-			self.Intent = "DENY"
-
 		if self.Intent is None:
-			hello_regex = re.compile("(hello|hey|how's it going|greetings|hi|yo)")
+			# Dialog flow control/User-initiative requests
+			reorder_check = re.compile("(reorder|usual|preferred|another|previous)")
+			if reorder_check.search(inputStr.lower()) is not None:
+				self.Intent = "REORDER"
 
-			hello = hello_regex.search(inputStr)
+			startover_check = re.compile("(startover|start-over|start over)")
+			cancel_check = re.compile("(cancel|stop|give up)")
+			repeat_check = re.compile("(repeat|say that again|come again|what was that)")
+			check_check = re.compile("(ready|when|where's the pizza i ordered)")
 
-			if hello is not None:
-				self.Intent = "HELLO"
+			if startover_check.search(inputStr) != None:
+				self.Intent = "START-OVER"
+			elif cancel_check.search(inputStr) != None:
+				self.Intent = "CANCEL"
+			elif repeat_check.search(inputStr) != None:
+				self.Intent = "REPEAT"
+			elif check_check.search(inputStr) != None:
+				self.Intent = "CHECK_ORDER"
+
+			confirm_check = re.compile("(yes|yeah|sure|okay|yep)")
+			deny_check = re.compile("(no|nope|nah|nada)")
+
+			if self.Intent is None:
+				if confirm_check.search(inputStr) != None:
+					self.Intent = "CONFIRM"
+				elif deny_check.search(inputStr) != None:
+					self.Intent = "DENY"
+
+			if self.Intent is None:
+				hello_regex = re.compile("(hello|hey|how's it going|greetings|hi|yo )")
+				thank_regex = re.compile("(thank you|thanks|awesome|terrific)")
+
+				hello = hello_regex.search(inputStr)
+
+				if hello is not None:
+					self.Intent = "HELLO"
+
+				thanks = thank_regex.search(inputStr)
+
+				if thanks is not None:
+					self.Intent = "THANK"
+
+
+			if self.Intent is None:
+				self.Intent = "INFORM"
+		
+
 
 		return self.Intent, inputStr
 

@@ -37,7 +37,11 @@ if __name__ == "__main__":
 
 	hw4_q2.evaluate_rules('eval_data.txt', intents_preds, slots_preds)
 
-	
+
+	with open("rules_preds.txt", "w") as output:
+		for pair in q1_predictions:
+			output.write("{}\t{}\n".format(pair[0], pair[1]))
+
 
 
 	"""gold_intent = []
