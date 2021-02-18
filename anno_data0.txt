@@ -9,7 +9,7 @@ INFORM	i'd like to order a <PIZZA_TYPE>hawaiian</PIZZA_TYPE> on <CRUST>gluten fr
 INFORM	<PHONENUMBER>425-555-1712</PHONENUMBER>
 REORDER	i'd like to place another order for my usual pizza order, please49
 REORDER	may i reorder my preferred pizza
-INFORM	<ORDER_TYPE>take out</ORDER_TYPE> from your maple leaf location, please
+INFORM	<ORDER_TYPE>take out</ORDER_TYPE> from your <PICKUPADDRESS>maple leaf location</PICKUPADDRESS>, please
 HELLO	hey, how's it going?
 CHECKORDER	where's the pizza i ordered?
 CHECKORDER	is my order ready?
@@ -20,9 +20,9 @@ INFORM	it is <PHONENUMBER>206-555-7812</PHONENUMBER>
 THANK	thanks
 THANK	awesome thanks
 INFORM	i want to order <COUNT>three</COUNT> pizzas on <CRUST>thin</CRUST>, please. all of them <SIZE>12 inch</SIZE>
-INFORM	i'd like to place an order for <ORDER_TYPE>pick up</ORDER_TYPE> from your redmond town center store
+INFORM	i'd like to place an order for <ORDER_TYPE>pick up</ORDER_TYPE> from your <PICKUPADDRESS>redmond town center store</PICKUPADDRESS>
 INFORM	hey, how's it going? this is <NAME>logan</NAME> here can you, please switch my order to </ORDER_TYPE>delivery</ORDER_TYPE>
-INFORM	hi, may i place an order for <ORDER_TYPE>take-out</ORDER_TYPE> from your bellevue square store
+INFORM	hi, may i place an order for <ORDER_TYPE>take-out</ORDER_TYPE> from your <PICKUPADDRESS>bellevue square store</PICKUPADDRESS>
 INFORM	may i order <COUNT>three</COUNT> pizzas on <CRUST>thin crust</CRUST>. make them <SIZE>medium</SIZE>
 INFORM	i'll have <COUNT>two</COUNT> pizzas on <CRUST>deep dish</CRUST>. i'll make the first one a <PIZZA_TYPE>hawaiian</PIZZA_TYPE> give me a <PIZZA_TYPE>4 cheese</PIZZA_TYPE> for the second one. a <SIZE>10 inch</SIZE>.
 INFORM	i want to add <TOPPING>pineapple</TOPPING> to the first half of the second pizza
