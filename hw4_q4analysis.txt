@@ -1,0 +1,25 @@
+On DATA6:
+Statistical Intent tagger F1:
+0.8725947864735315
+Statistical Slot tagger F1:
+0.914227183956821
+Rule-based Intent tagger F1:
+0.8056202270381838
+Rule-based Slot tagger F1:
+0.9275755252840048
+
+The statistical system performs better on intents, but the rule-based system performs slightly better on slot tagging. The rule-based system suffered the most from the ASR errors, because it relies on exact matches from the utterances in order to decide on an intent or a slot tag, which reduces its robustness. The statistical model, which relies on context in addition to the words themselves being tagged, was still able to achieve performance comparable with that of the clean data. 
+
+We weren't able to make any changes to the rule-based system that helped with ASR errors in particular, but in looking through the predictions for DATA6 we were able to add a few more general improvements to coverage of toppings and intents like HELLO or REORDER.
+
+We weren't able to make improvements to the statistical system to better handle ASR errors, because the errors were mainly an issue with a lack of training data that contained gaps. To address this, we would need to include data in the model's training that had ASR errors, or include a few more rule-based features in the statistical model, to cover those issues, but we felt that that would make our statistical system too rigid and defeat the purpose of using a statistical model.
+
+After:
+Statistical Intent tagger F1:
+0.8725947864735315
+Statistical Slot tagger F1:
+0.914227183956821
+Rule-based Intent tagger F1:
+0.8056202270381838
+Rule-based Slot tagger F1:
+0.9275755252840048

@@ -1,31 +1,25 @@
 import re
 import sys
-from hw4_q1 import NLUDefault
+from hw4_q4_rules import NLUDefault
 import hw4_q2
+import hw4_q4_stat
 from sklearn.metrics import f1_score
 
 
 if __name__ == "__main__":
 
-	def process_input(in_value):
-		intent_val, trash = hw4_q2.convert_to_ngrams(["BOS "+in_value+" EOS"])
-		intent_val = hw4_q2.feat_vector(intent_val[0], unique_ngrams)
-
-		slots_val = hw4_q2.sent2features([(w,) for w in in_value.split()])
-
-		intent = NLU_q2_intents.predict([intent_val])
-		slots = NLU_q2_slots.predict([slots_val])
-
-		annotated_utterance = hw4_q2.BIO2sent(in_value.split(), slots[0])
-
-		return intent[0], annotated_utterance
 
 	NLU_q1 = NLUDefault()
-	NLU_q2_intents, NLU_q2_slots, unique_ngrams = hw4_q2.train_both_models()
+	NLU_q2_intents, NLU_q2_slots, unique_ngrams = hw4_q4_stat.train_both_models()
 
-	hw4_q2.evaluate_stats(NLU_q2_intents, NLU_q2_slots, 'eval_data.txt', unique_ngrams)
+	intents, printable = hw4_q4_stat.evaluate_stats(NLU_q2_intents, NLU_q2_slots, 'data6_labeled.txt', unique_ngrams)
 
-	with open('clean_eval.txt') as q1_data:
+	with open("data6_stats_preds.txt", "w") as output:
+		for intent, line in zip(intents, printable):
+			output.write("{}\t{}\n".format(intent, line))
+
+
+	with open('data6_unlabeled.txt') as q1_data:
 		sentences = q1_data.readlines()
 
 
@@ -35,10 +29,10 @@ if __name__ == "__main__":
 	intents_preds = [l[0] for l in q1_predictions]
 	slots_preds = [l[1] for l in q1_predictions]
 
-	hw4_q2.evaluate_rules('eval_data.txt', intents_preds, slots_preds)
+	hw4_q2.evaluate_rules('data6_labeled.txt', intents_preds, slots_preds)
 
 
-	with open("rules_preds.txt", "w") as output:
+	with open("data6_rules_preds.txt", "w") as output:
 		for pair in q1_predictions:
 			output.write("{}\t{}\n".format(pair[0], pair[1]))
 

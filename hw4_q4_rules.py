@@ -7,8 +7,8 @@ class NLUDefault:
 	def __init__(self):
 		self.oflavors = ["vegan", "hawaiian", "meat lovers", "4 cheese", "pepperoni", "veggie supreme"]
 		self.osizes = ["small", "medium", "large"]
-		self.ocrusts = ["thin", "regular", "gluten-free", "deep-dish"]
-		self.otoppings = ['onions','olives','swiss cheese','pineapple','provolone cheese','anchovies','extra cheese','peppers','pepporoni','sausage','ham','mushrooms']
+		self.ocrusts = [" thin ", "regular", "gluten-free", "deep-dish"]
+		self.otoppings = ['red onion', 'onions','olives','swiss cheese','pineapple','provolone cheese','anchovies','extra cheese','peppers','pepporoni','sausage','ham','mushrooms']
 		self.Domain = "pizza"
 		self.Intent = None
 		self.Slots = {}
@@ -42,7 +42,7 @@ class NLUDefault:
 			if num_replace > 0:
 				self.Intent = "INFORM"
 
-		size_regex = re.compile("[0-9]{2}.*(inch|in)")
+		size_regex = re.compile("[0-9]{2} (inch|in)")
 
 		size = size_regex.search(inputStr)
 
@@ -129,14 +129,14 @@ class NLUDefault:
 
 		if self.Intent is None:
 			# Dialog flow control/User-initiative requests
-			reorder_check = re.compile("(reorder|usual|preferred|another|previous)")
+			reorder_check = re.compile("(reorder|usual|preferred|another|previous|frequent)")
 			if reorder_check.search(inputStr.lower()) is not None:
 				self.Intent = "REORDER"
 
 			startover_check = re.compile("(startover|start-over|start over)")
 			cancel_check = re.compile("(cancel|stop|give up)")
 			repeat_check = re.compile("(repeat|say that again|come again|what was that)")
-			check_check = re.compile("(ready|when|where's the pizza i ordered)")
+			check_check = re.compile("(ready|when|where's the pizza i ordered|how long)")
 
 			if startover_check.search(inputStr) != None:
 				self.Intent = "START-OVER"

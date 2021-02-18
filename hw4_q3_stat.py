@@ -107,6 +107,9 @@ sizes = ["small", "medium", "large"]
 crusts = ["thin", "regular", "gluten-free","gluten free", "deep-dish", "deep dish"]
 toppings = ['spinach','kale','cheese','onions','olives','swiss cheese','pineapple','provolone cheese','anchovies','extra cheese','peppers','pepporoni','sausage','ham','mushrooms']
 delivery = ['pickup','pick-up','delivery','delivered','pick up','take-out','take out']
+names = ['eva', 'michael', 'rahul', 'logan']
+pickuplocations = ['redmond', 'town', 'center', 'square']
+phones = re.compile("[0-9]{3}-[0-9]{3}-[0-9]{4}")
 
 
 
@@ -153,7 +156,7 @@ def word2features(sent, i):
         features['EOS'] = True
         
         
-    for i, lexicon in enumerate([flavors, sizes, crusts, toppings,delivery]):
+    for i, lexicon in enumerate([flavors, sizes, crusts, toppings,delivery, names, pickuplocations]):
         if word.lower() in lexicon:
             if i == 0:
                 features['flavors'] = True
@@ -165,6 +168,13 @@ def word2features(sent, i):
                 features['toppings'] = True
             elif i == 4:
                 features['delivery'] = True
+            elif i == 5:
+                features['names'] = True
+            elif i == 6:
+                features['pickuploc'] = True
+
+    if phones.search(word) is not None:
+        features['phone'] = True
 
     return features
 

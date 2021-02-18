@@ -1,4 +1,4 @@
-
+DATA5:
 Before:
 Statistical Intent tagger F1:
 0.9045474458503984
@@ -29,3 +29,30 @@ Rule-based Intent tagger F1:
 0.8251930092134251
 Rule-based Slot tagger F1:
 0.89877085832567
+
+
+Statistical Performance on DATA0:
+
+Statistical Intent tagger F1:
+1.0
+Statistical Slot tagger F1:
+0.8381113726314965
+
+Errors:
+- Not recognizing phone numbers
+- Not recognizing names
+- Not recognizing pickup locations
+- Assigning SLOT_ATTRIBUTE to long strings/topping strings
+
+Because we used only our own dataset as training (because of the difficulty
+in converting other groups' annotations to the same mapping), and we used <info_type>
+liberally in our own data, the model is over-tagging with SLOT_ATTRIBUTE in certain
+cases. That's not fixable without changing the training data, but the phone numbers,
+names, and pickup locations can be more robustly handled by adding them to
+the lexicon containment features.
+
+After:
+Statistical Intent tagger F1:
+1.0
+Statistical Slot tagger F1:
+0.8446382648244688

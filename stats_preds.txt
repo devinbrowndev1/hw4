@@ -1,0 +1,33 @@
+INFORM	can i order a <SIZE>large</SIZE> <PIZZA_TYPE>meat lovers,</PIZZA_TYPE> please
+INFORM	let's go with <ORDER_TYPE>delivery</ORDER_TYPE>
+HELLO	hello,
+INFORM	please make it <ORDER_TYPE>take-out</ORDER_TYPE>
+INFORM	hi, i'll have a <PIZZA_TYPE>4 cheese,</PIZZA_TYPE> please
+REORDER	may i reorder my favorite pizza, please
+INFORM	i want to order a <PIZZA_TYPE>hawaiian</PIZZA_TYPE> on gluten free crust. make it <SIZE>small</SIZE>
+INFORM	i'd like to order a <PIZZA_TYPE>hawaiian</PIZZA_TYPE> on <CRUST>gluten free.</CRUST> make it <SIZE>14 inch,</SIZE> please
+INFORM	425-555-1712
+REORDER	i'd like to place another order for my usual pizza order, please49
+REORDER	may i reorder my preferred pizza
+INFORM	<ORDER_TYPE>take out</ORDER_TYPE> from your maple leaf location, please
+HELLO	hey, how's it going?
+CHECKORDER	where's the pizza i ordered?
+CHECKORDER	is my order ready?
+INFORM	<ORDER_TYPE>pick up</ORDER_TYPE>
+INFORM	it's eva
+INFORM	it's michael
+INFORM	it is <PHONENUMBER>206-555-7812</PHONENUMBER>
+THANK	thanks
+THANK	awesome thanks
+INFORM	i want to order three pizzas on <CRUST>thin,</CRUST> please. all of them <SIZE>12 inch</SIZE>
+INFORM	i'd like to place an order for <ORDER_TYPE>pick up</ORDER_TYPE> from your redmond town center store
+INFORM	hey, how's it going? this is logan here can you, please switch my order to
+INFORM	hi, may i place an order for <ORDER_TYPE>take-out</ORDER_TYPE> from your bellevue square store
+INFORM	may i order three pizzas on <CRUST>thin crust.</CRUST> make them <SIZE>medium</SIZE>
+INFORM	i'll have <COUNT>two</COUNT> pizzas on deep dish. i'll make the first one a <PIZZA_TYPE>hawaiian</PIZZA_TYPE> give me a <PIZZA_TYPE>4 cheese</PIZZA_TYPE> for the second one. a <SIZE>10 inch.</SIZE>
+INFORM	i want to add <TOPPING>pineapple to the first half of the second pizza</TOPPING>
+INFORM	may i get <TOPPING>swiss cheese on the second half of the</TOPPING> first pizza
+INFORM	also put <TOPPING>provolone cheese on the right half of the second one</TOPPING>
+INFORM	i'd like five pizzas. i'll go with <SLOT_ATTRIBUTE>medium for all of them</SLOT_ATTRIBUTE>
+INFORM	i'll order a <SIZE>14 inch</SIZE> <PIZZA_TYPE>4 cheese</PIZZA_TYPE> on deep dish for the second one, please
+INFORM	i need to add <SLOT_ATTRIBUTE>onions to the right half of the second one</SLOT_ATTRIBUTE>

@@ -155,13 +155,15 @@ class NLUDefault:
 		return self.Intent, inputStr
 
 
-invalue = 'nomorepizzaplease'
+if __name__ == "__main__":
+	invalue = 'nomorepizzaplease'
 
-while invalue != 'quit':
-	print('Type the sentence to be parsed by the rule-based system or type quit to exit')
-	invalue = input()
-	NLU = NLUDefault()
-	print(NLU.parse(invalue))
+	while invalue != 'quit':
+		print('Type the sentence to be parsed by the rule-based system or type quit to exit')
+		invalue = input()
+		NLU = NLUDefault()
+		intent_anno = NLU.parse(invalue)
+		print("{}\t{}".format(intent_anno[0], intent_anno[1]))
 
 
 
